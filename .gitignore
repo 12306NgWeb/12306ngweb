@@ -1,0 +1,11 @@
+*.class
+*.iml
+.idea
+target
+logs
+*.log
+*.tmp
+version.properties
+.settings
+.classpath
+.project
