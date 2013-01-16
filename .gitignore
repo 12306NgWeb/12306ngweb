@@ -1,11 +1,21 @@
+# temporary files #
 *.class
-*.iml
-.idea
 target
 logs
 *.log
 *.tmp
 version.properties
+
+# IDEA #
+*.iml
+.idea
+
+# eclipse #
 .settings
 .classpath
 .project
+
+# Package Files #
+*.jar
+*.war
+*.ear
