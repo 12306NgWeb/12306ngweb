@@ -19,6 +19,11 @@
 	</properties>
 
 	<dependencies>
+		<!-- json -->
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+		</dependency>
 		<!-- Spring core & mvc -->
 		<dependency>
 			<groupId>org.springframework</groupId>
