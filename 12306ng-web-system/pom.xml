@@ -81,6 +81,8 @@
 			<groupId>org.springside</groupId>
 			<artifactId>springside-core</artifactId>
 			<version>${springside.version}</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/springside-core-4.0.1.GA.jar</systemPath>
 		</dependency>
 
 		<!-- AOP begin -->
@@ -276,7 +278,8 @@
 			<groupId>org.springside</groupId>
 			<artifactId>springside-test</artifactId>
 			<version>${springside.version}</version>
-			<scope>test</scope>
+			<scope>system</scope>
+			<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/springside-test-4.0.1.GA.jar</systemPath>
 		</dependency>
 
 		<dependency>
@@ -291,7 +294,7 @@
 			<artifactId>spring-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
+		
 		<!-- selenium 2.0 -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
