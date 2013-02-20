@@ -20,6 +20,8 @@
 		<jdk.version>1.6</jdk.version>
 		<jetty.version>7.6.8.v20121106</jetty.version>
 		<json.version>1.9.11</json.version>
+        <ehcache.version>2.6.3</ehcache.version>
+        <compiler.encoding>UTF8</compiler.encoding>
 	</properties>
 
 	<dependencies>
@@ -93,7 +95,7 @@
 			<scope>compile</scope>
 		</dependency>
 
-		<dependency>
+        <dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
 			<version>${spring.version}</version>
@@ -127,7 +129,7 @@
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
-			<version>2.4</version>
+			<version>2.5</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -136,6 +138,18 @@
 			<version>2.1</version>
 			<scope>provided</scope>
 		</dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+            <type>jar</type>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.ehcache</groupId>
+            <artifactId>ehcache-core</artifactId>
+            <version>${ehcache.version}</version>
+        </dependency>
 	</dependencies>
 
 	<repositories>
@@ -156,6 +170,7 @@
 				<configuration>
 					<source>${jdk.version}</source>
 					<target>${jdk.version}</target>
+                    <encoding>${compiler.encoding}</encoding>
 					<showWarnings>true</showWarnings>
 				</configuration>
 			</plugin>
