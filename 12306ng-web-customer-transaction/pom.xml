@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
 
+	
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>12306ng-pom</artifactId>
+		<groupId>org.12306ng.web</groupId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
 	<groupId>org.12306ng.web</groupId>
 	<artifactId>12306ng-web-customer-transaction</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<packaging>war</packaging>
 	
 	<name>12306ng-web-customer-transaction</name>
+	
 	<url>http://www.12306ng.org</url>
 
 	<properties>
@@ -150,8 +157,18 @@
             <artifactId>ehcache-core</artifactId>
             <version>${ehcache.version}</version>
         </dependency>
+        <!--12306ng  -->
+		<dependency>
+			<groupId>org.12306ng.web</groupId>
+			<artifactId>12306ng-web-template</artifactId>
+			<type>war</type>
+			<scope>compile</scope>
+		</dependency>
+   	        
 	</dependencies>
 
+	
+	
 	<repositories>
 		<repository>
 			<id>springsource-milestones</id>

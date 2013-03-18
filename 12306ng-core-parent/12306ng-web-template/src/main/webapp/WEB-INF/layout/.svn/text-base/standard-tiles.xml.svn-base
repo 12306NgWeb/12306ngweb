@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+ 
+<tiles-definitions>        
+        <definition name="standardLayout" template="/WEB-INF/layout/standard.jsp" >
+        	 <put-attribute name="title" value="Support Automation User Interface (iSAPort)"/>
+        	 <put-attribute name="staticMenu" value="/WEB-INF/layout/staticMenu.jsp"/>  
+        	 <put-attribute name="serviceMenu" value="/WEB-INF/layout/serviceMenu.jsp"/>      	 
+        	 <put-attribute name="body" value="/WEB-INF/layout/blank.jsp"/>
+			 <put-attribute name="featureName" value=""></put-attribute>
+			 <put-attribute name="appName" value="iSAPort"></put-attribute>
+        </definition>
+        <definition name="unwrappedLayout" template="/WEB-INF/layout/unwrapped.jsp" >
+        	 <put-attribute name="body" value="/WEB-INF/layout/blank.jsp"/>
+        </definition>
+</tiles-definitions>
