@@ -1,0 +1,257 @@
+@charset "utf-8";
+/* CSS Document */
+/*index css*/
+.ng-wrap{ margin: 0 auto; width: 1000px;}
+.ng-logo{ margin: 250px auto 20px auto; width: 320px; height: 75px; background:url(../images/logo.png) no-repeat;}
+
+.ng-menu{ margin: 15px auto; width: 320px; line-height: 35px;}
+.ng-menu span{ margin: 0 5px;}
+.ng-menu .blue a{ color: #38e;}
+.ng-menu .red a{ color: #f44; text-decoration: none;}
+
+.ng-indexSearch{ margin: 0 auto 250px auto; padding: 10px 0; width:740px;}
+.ng-indexSearch input{ vertical-align:middle;}
+.inputtxt , .inputcode, .inputdate ,.goreg{ height:43px; line-height: 43px; border: 1px solid #ddd; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; vertical-align: middle;}
+.inputtxt{ width: 230px;}
+.inputdate{ width: 160px;}
+.inputcode{ width: 150px;}
+.btnsearch{ width: 100px; height: 45px; line-height: 45px; color: #fff; background: #f44; border: none; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px;}
+
+.bottom{ clear:both; position: fixed; bottom: 0; margin: 0 auto; padding: 0; width: 100%; height: 40px; line-height: 40px; background: #eee; border-top: 1px solid #ddd;}
+.bottom img{ float: left;}
+.bottom span{ float: right; padding-right: 5px; line-height: 40px;}
+.bottom span a{ display: inline-block; margin-right: 5px; color: #333; text-decoration: none;}
+.bottom em{ margin: 0 5px;}
+
+/*header*/
+.header{ clear: both; position: fixed; top: 0; margin: 0 auto; padding: 0; width: 100%; height: 50px; line-height: 50px; background: #fafafa; border-bottom: 1px solid #ddd;}
+.header img{ float: left; padding-left: 10px;}
+.headermenu{ margin-left: 15px;}
+.headermenu a{ display:inline-block; padding: 0 15px; text-decoration: none; color: #333;}
+.headerlogin{ margin:11px 20px;; width: 90px; height: 28px; line-height: 28px; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; background: #f44; text-align:center;}
+.headerlogin a{ margin: 0 5px; text-align: center; text-decoration: none; color: #fff}
+
+#myshow{ position: absolute; top: 38px; right: 20px; width: 88px; background: #fff; border: 1px solid #f44;}
+#myshow ul{ margin: 0 auto; text-align: center;}
+#myshow ul li{ width:100%; line-height: 25px; }
+#myshow ul li a{ display: inline-block; width:100%; text-decoration: none; color: #666;}
+#myshow ul li a:hover{ background: #fee; color: #f44;}
+
+/*register*/
+.ng-register{ margin: 75px auto 45px auto; padding: 10px 39px; width: 940px; line-height: 25px; border: 1px solid #ddd;}
+.ng-register h2{ margin: 5px auto; color: #38e; text-align: center;}
+.ng-register p{ text-indent: 2em;}
+.ng-register h3{ margin-top: 15px;}
+.goreg{ margin-bottom: 50px; width:230px; background: #38e; border: none; color: #fff; }
+
+.userinfors{ margin: 75px auto 15px auto; padding: 30px 39px; border: 1px solid #ddd;}
+.userinfors legend{ padding: 0 10px;}
+.inputname,.inputcode{ height:40px; line-height: 40px; border: 1px solid #ddd; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; vertical-align: middle;}
+.inputname{ width: 300px;}
+.userinfors ul{ margin: 0; padding: 0;}
+.userinfors ul li{ margin: 5px 0;}
+.userinfors ul li p{ padding-left: 110px; margin-top: 5px;}
+.userinfors em{margin: 0 5px; color: #f44;}
+.userinfors label{ display: inline-block; width: 100px; text-align: right; margin-right:10px;}
+
+.baseinfos{ width: 1000px;}
+.detailinfos{ margin-bottom: 35px; width: 1000px;}
+
+.reg-finish{ clear:both; padding: 50px; margin: 200px auto; width: 350px;}
+.reg-finish img{ float: left; margin-right: 10px;}
+.reg-finish h1{ line-height: 30px; font-size: 30px;}
+.reg-finish p{ line-height: 30px}
+.reg-finish a{ margin: 0 5px; text-decoration: none; color: #38e;}
+
+/*login*/
+.userlogin{ width: 1000px;}
+.btnlogin, .btnreg,.btncode, .btnhelp{ height: 42px; line-height: 40px; border: 1px solid #ddd; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; vertical-align: middle;}
+.btnlogin{ width: 150px; margin-bottom: 50px; background: #38e; color: #fff; border: none;}
+.btnreg{ width: 150px; margin-bottom: 50px; background: #f0f0f0; border: none;}
+
+/*find password*/
+.findpwd{ width: 1000px;}
+.findpwd p{ padding-bottom: 20px;}
+.findpwd img{ margin: 5px 15px;}
+.btncode{ width: 150px;}
+.btnhelp{ width: 100px}
+
+/*page*/
+.page{ margin: 0 auto; text-align: center;}
+.page a{ text-decoration: none; color: #38e;}
+.page .pagecurrent{ color: #333;}
+/*help*/
+.userhelp{ width: 1000px;}
+.usersearch{ padding-bottom:40px; border-bottom: 1px dashed #ddd;}
+.userhelp a{ margin: 0 5px; text-decoration: none; }
+.userhelp .helplist{ margin: 0; padding: 10px 0;}
+.helplist li{ line-height: 30px; margin: 5px 0; padding:0;}
+.userhelp .helplist li p{ margin: 0; padding: 0;}
+
+/*my order*/
+.myorder{ clear: both; overflow: hidden; margin: 75px auto 45px auto; padding: 0; width:1000px; border: 1px solid #ddd;}
+.position{ clear:both; height:38px; line-height:38px; text-indent:50px; background:url(../images/line.png) repeat-x; border-bottom: 1px solid #ddd;}
+.orderleft{ width: 160px; min-height:900px; background: #f5f5f5; line-height: 40px; border-right: 1px solid #ddd;}
+.orderleft ul{ margin: 0; padding: 0;}
+.orderleft ul li{ height: 40px; width: 100%; text-align: center;}
+.orderleft ul li a{ text-decoration: none; color: #666;}
+.orderright{ padding:20px; width: 790px;}
+.infosurrent{ background: #fff; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; border-right:1px solid #fff; color: #38e;}
+.orderleft .infosurrent a{ color: #38e;}
+.ordercontact{ padding: 10px 0;}
+
+.contactsearch{ margin:0 auto 20px auto; padding:0 0 20px 0; border-bottom: 1px dashed #ddd;}
+.contactinfos{ overflow:hidden; width: 100%; border-bottom: 1px solid #ddd;}
+.contactinfos .tableheader, .contactinfos .tableheader:hover{ height:32px; line-height: 34px; background: #eef5ff; border-top: 1px solid #def; border-bottom: 1px solid #def;}
+.contactinfos td{ height: 60px; line-height: 60px;}
+.contactinfos tr:hover{ background: #f0f0f0;}
+.cname, .csex, .ctraveler, .cdo{ width: 10%; text-align: center;}
+.ccard, .cphone { width: 15%; text-align: center;}
+.cid{ width: 30%; text-align: center;}
+.cdo a{ text-decoration: none;}
+
+.btnadd, .btndelete{ width: 90px; height: 30px; line-height: 30px; border: none; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; vertical-align: middle;}
+.btnadd{ background: #38e; color: #fff; }
+.btndelete{ background: #fafafa; border: 1px solid #ddd;}
+.inputsearch, .inputpwd{ height: 28px; line-height: 28px; border: 1px solid #ddd; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; vertical-align: middle;}
+.inputsearch{ width: 155px; }
+
+/*my infos*/
+.myinfos{}
+.myinfos h2{ margin-bottom: 5px; padding:3px 0; line-height:30px; border-bottom: 1px solid #eee;}
+.myinfos ul{ padding:5px 0; margin: 0 auto;}
+.myinfos ul li{ margin: 10px 0;}
+.myinfos ul li label{ display: inline-block; width: 200px; text-align: right; margin-right: 10px; color: #666;}
+.inputpwd{ width: 240px;}
+.btnmodify{ padding-top:30px; margin: 20px auto; border-top: 1px dashed #ddd;}
+.myinfos select{ width: 150px;}
+.modifytxt{ width: 450px; height:28px; line-height: 28px; border: 1px solid #ddd;; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; vertical-align: middle;}
+
+/*book ticket*/
+.bookorder{ clear: both; overflow: hidden; margin: 45px auto; padding: 0; width:1000px;}
+.bookstep{ clear: both; margin: 10px auto; padding-top: 25px; overflow: hidden;}
+.traininfos { margin: 25px auto; padding: 20px 39px;}
+.trainorder{ display: inline-block; width:150px; height:50px; line-height:50px; text-align: center;}
+.traininfos p{ line-height: 25px;}
+.traininfos em{ color: #333;}
+
+.travelinfo{ overflow:hidden; margin: 20px auto; width: 100%; border: 1px solid #ddd; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px;}
+.travelinfo .tableheader, .travelinfo .tableheader:hover{ height:32px; line-height: 34px; background:url(../images/line.png) repeat-x; border-bottom: 1px solid #ddd;}
+.travelinfo td{ height: 40px; line-height: 40px;}
+.travelinfo tr:hover{ background: #def;}
+.torder, .tdo{ width: 10%; text-align: center;}
+.tdate, .tstartadd, .tendadd, .ttime { width: 18%; text-align: left;}
+.tdo a{ text-decoration: none;}
+
+.travelinfo input, .travelinfo label, .travelinfo select{ vertical-align: middle;}
+
+.travelcontact{overflow:hidden; margin: 20px auto; width: 998; border: 1px solid #ddd; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px;}
+.travelcontact h2{ height:32px; line-height: 34px; background:url(../images/line.png) repeat-x; border-bottom: 1px solid #ddd; text-indent: 40px;}
+.contactcheck{ padding:0 10px 0 40px; line-height: 30px;}
+.contactcheck span{ margin: 0 5px;}
+.contactcheck a, .travelinfo a{ text-decoration: none;}
+.contactcheck input[type=checkbox]{margin-right: 5px; vertical-align: middle;}
+.contactcheck label{ vertical-align: middle;}
+.iorder, .ido{ width: 7%; text-align: center;}
+.isite, .iticket{ width: 8%;}
+.iname, .icard, .iphone{ width: 12%; }
+.icid{ width: 18%;}
+.iuse{ width: 15%; text-align: center;}
+.contactname, .contactid, .contactphone, .singleselect{ border: 1px solid #ddd; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; vertical-align: middle;}
+.contactname{ width: 100px; height:28px; line-height: 28px; }
+.contactid{ width: 160px; height:28px; line-height: 28px; }
+.contactphone{ width: 120px; height:28px; line-height: 28px; }
+.iuse input[type=checkbox]{ margin-right: 5px;}
+
+.btnadduser{ width: 100px; height: 28px; line-height: 28px; border: 1px solid #ddd; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; vertical-align: middle;}
+
+.describinfos{ padding: 10px; margin: 10px auto; border-top: 1px dashed #ddd;}
+.describinfos p{ line-height: 25px;}
+.travelcontact .travelinfo{ margin: 0 auto; border: none;}
+
+.tickettotle{ padding: 10px; margin: 0 auto; background: #ffe; border: 1px solid #ffce09; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px;}
+.tickettotle strong{ font-weight: bold;}
+
+.btnaddticket ,.btnresetticket{ width: 160px; height: 50px; line-height: 50px; border: none; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; vertical-align: middle;}
+.btnaddticket{ background: #38e; color: #fff;}
+.btnresetticket{ background: #fafafa; border: 1px solid #ddd;}
+
+/*confirm*/
+.bgcolor{ display:none; filter:alpha(opacity=30); -moz-opacity:0.3;opacity:0.3; background-color:#000; width:100%; height:100%; position:fixed; _position:absolute; left:0; top:0; z-index:1000;}
+.submitconfirm{ display:none;  position:fixed; _position:absolute; top:20%; _top: expression(documentElement.scrollTop+200); left:50%; margin:-50px 0 0 -300px; padding:0 10px 20px 10px; z-index:1001; width:650px; height:auto;  font-size:14px; color:#666;
+filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#f3f3f3',endColorStr='#ffffff',gradientType='0'); 
+background: -moz-linear-gradient(top, #f3f3f3, #ffffff); 
+background: -o-linear-gradient(top,#f3f3f3, #ffffff); 
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f3f3f3), to(#ffffff));  }
+.confirmation h1{  font-size:25px; }
+.submitconfirm h1{ padding: 10px 0; border-bottom: 1px solid #ddd;}
+.submitconfirm p{ padding:2px 10px;}
+.submitconfirm ul{  margin:0 ; padding: 10px; border-top: 1px dashed #ddd; border-bottom: 1px dashed #ddd; }
+.submitconfirm li{ line-height:20px; margin:5px 0;}
+.submitconfirm li span{ margin-right: 20px; color: #666;}
+.submitconfirm li span .black{ color: #333;}
+.user_close{ float:right; width:23px; height:23px; cursor:pointer; background:url(../images/close.png) no-repeat; }
+
+.trainconfirm{ padding: 10px 0; line-height: 25px; }
+.trainconfirm span{ margin-right:20px;}
+
+.btnsubmit, .btncancel, .btnsinglesearch{  border: none; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; vertical-align: middle;}
+.btnsubmit{ width: 120px; height: 40px; line-height: 40px; background: #38e; color: #fff; }
+.btncancel{ width: 120px; height: 40px; line-height: 40px; background: #fafafa; border: 1px solid #ddd;}
+.btnsinglesearch{ width: 90px; height: 28px; line-height: 28px; background: #38e; color: #fff; }
+/**/
+.ordersuccess{ padding: 10px 20px; line-height: 25px;}
+.ordersuccess em{ margin: 0 5px; color: #f44; }
+
+/*book ticket success*/
+.ticketsuccess{ clear: both; padding: 30px 0; margin: 0 auto; width: 620px; text-align: center;}
+.ticketsuccess img{ float: left;}
+.ticketsuccess h1{ font-size: 30px; line-height: 56px;}
+.ticketsuccess span{ color: #666;}
+.ticketsuccess em{ color: #333;}
+
+.warmprompt{ padding: 15px; border-top: 1px solid #ddd;}
+.warmprompt li{ line-height: 30px;}
+.warmprompt span{ margin: 0 5px; color: #38e;}
+
+/*order*/
+.ordercons{ position:relative; margin: 5px auto; line-height:30px; }
+.otitle{ display: inline-block; position:absolute; left: 0; top: 0; width: 100px; height:35px;  }
+.tags, .ordertypeselect{ clear:both; height:30px; list-style:none outside none; margin:0 0 -1px; padding:0; position:relative; left: 80px; }
+.tags li , .ordertypeselect li{ cursor:pointer; float:left; margin-right:6px; }
+.tags li a , .ordertypeselect li a{ color:#36C; display:block; line-height:30px; padding:0 1em; text-decoration:none; }
+.tags li.current { border-bottom-style:none; font-weight:700; height:30px; }
+.tags li.current a { color:#C63; outline:0; }
+.panes { margin-top: 15px;}
+
+.ticketout{ overflow:hidden; margin: 5px auto 10px auto; width: 100%; }
+.ticketout .tableheader, .ticketout .tableheader:hover{ height:32px; line-height: 34px; background: #eef5ff; border-top: 1px solid #def; border-bottom: 1px solid #def;}
+.ticketout tr{ border-bottom: 1px solid #ddd;}
+.ticketout th{padding:0 10px; color: #38e}
+.ticketout td{padding:10px; text-align:center;}
+.ticketout tr:hover{ background: #fafafa;}
+.ticketout a{ text-decoration: none;}
+.btnpay, .btnpaycancel, .btnpaychange{ width: 90px; height: 28px; line-height: 28px; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; vertical-align: middle;}
+.btnpay{ border: none; background: #38e; color: #fff;}
+.btnpaycancel, .btnpaychange{ background: #fafafa; border: 1px solid #ddd;}
+.tips{ margin-top: 20px; padding: 10px; border-top: 1px dashed #ddd; }
+.tips p{ line-height: 25px;}
+
+.singleselect{ width: 120px; height:26px; line-height: 26px; }
+
+/*ticket search*/
+.ticketsearch{ margin: 75px auto 25px auto; padding: 0 20px; }
+.searchdatess{ margin: 10px auto; overflow: hidden; line-height: 40px;}
+.searchdates input{ vertical-align: middle;}
+.searchdates .inputtxt, .searchdates .inputdate{ width: 230px; height: 38px; line-height: 38px;}
+.searchdates .btnsearch{ width: 100px; height: 40px; line-height: 40px;}
+
+.searchdates ul{ clear: both; padding: 10px 0; overflow: hidden; }
+.searchdates ul li{ float: left; margin-right: 10px;}
+.searchdates label, .searchdates input, .searchdates select{ vertical-align: middle;}
+.searchdates input{ margin-right: 5px;}
+
+.alltrains{ width: 100%; text-align: center; border: 1px solid #ddd; line-height: 30px;}
+.alltrains .startstation{ width: 5%; }
+.alltrains .orderstation{ width: 5%; }
+.alltrains th{ text-align: center;}

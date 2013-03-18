@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/rg0501/hpit112166/!svn/ver/4979/isaport-core-parent/trunk/src/isaport-core-parent/isaport-template/src/main/webapp/WEB-INF/layout
+END
+includes.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/rg0501/hpit112166/!svn/ver/4358/isaport-core-parent/trunk/src/isaport-core-parent/isaport-template/src/main/webapp/WEB-INF/layout/includes.jsp
+END
+header.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/rg0501/hpit112166/!svn/ver/4979/isaport-core-parent/trunk/src/isaport-core-parent/isaport-template/src/main/webapp/WEB-INF/layout/header.jsp
+END
+staticMenu.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/rg0501/hpit112166/!svn/ver/4919/isaport-core-parent/trunk/src/isaport-core-parent/isaport-template/src/main/webapp/WEB-INF/layout/staticMenu.jsp
+END
+footer.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/rg0501/hpit112166/!svn/ver/4498/isaport-core-parent/trunk/src/isaport-core-parent/isaport-template/src/main/webapp/WEB-INF/layout/footer.jsp
+END
+standard.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/rg0501/hpit112166/!svn/ver/4684/isaport-core-parent/trunk/src/isaport-core-parent/isaport-template/src/main/webapp/WEB-INF/layout/standard.jsp
+END
+standard-tiles.xml
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/rg0501/hpit112166/!svn/ver/4647/isaport-core-parent/trunk/src/isaport-core-parent/isaport-template/src/main/webapp/WEB-INF/layout/standard-tiles.xml
+END
