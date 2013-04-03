@@ -11,7 +11,6 @@
     <context:component-scan base-package="org.ng12306.web.ct.controller" use-default-filters="false">
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
-
     <mvc:annotation-driven/>
 
     <!-- 将无法mapping到Controller的path交给default servlet handler处理 -->
@@ -22,5 +21,5 @@
         <property name="prefix" value="/WEB-INF/views/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
-
+	<import resource="classpath*:/tiles-context.xml" />
 </beans>

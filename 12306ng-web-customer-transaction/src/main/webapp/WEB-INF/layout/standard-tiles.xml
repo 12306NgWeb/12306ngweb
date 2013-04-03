@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+ 
+<tiles-definitions>        
+        <definition name="standardLayout" template="/WEB-INF/layout/standard.jsp" >
+        	 <put-attribute name="title" value="12306ng web"/>
+        	 <put-attribute name="header" value="/WEB-INF/layout/header.jsp"/>  
+        	 <put-attribute name="body" value=""/>
+			 <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp"></put-attribute>
+			 <put-attribute name="appName" value="iSAPort"></put-attribute>
+        </definition>
+</tiles-definitions>
