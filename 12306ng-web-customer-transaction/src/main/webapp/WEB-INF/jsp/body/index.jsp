@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -6,9 +6,9 @@
 <script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
 <link rel="stylesheet" type="text/css" href="../css/base.css" />
 <link rel="stylesheet" type="text/css" href="../css/main.css" />
-</head>
+</head> 
 
-<body>
+<body>-->
 <div class="ng-wrap">
 	<div class="ng-logo"></div>
     <div class="ng-menu">
@@ -28,7 +28,7 @@
         <input type="submit" value="查询" name="search" class="btnsearch f16" />
     </div>    
 </div>
-<div class="bottom">
+<!-- <div class="bottom">
 	<img src="../images/bottomlogo.png" alt="12306ng-Logo" width="110" height="40" />
     <span>
     	<a href="">新手上路</a><em>|</em>
@@ -38,7 +38,7 @@
         <a href="">团队成员</a><em>|</em>
         <a href="">联系我们</a>
     </span>
-</div>
+</div> -->
 
-</body>
-</html>
+<!-- </body>
+</html> -->

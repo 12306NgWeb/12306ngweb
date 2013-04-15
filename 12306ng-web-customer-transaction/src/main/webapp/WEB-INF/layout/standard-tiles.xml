@@ -11,4 +11,13 @@
 			 <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp"></put-attribute>
 			 <put-attribute name="appName" value="iSAPort"></put-attribute>
         </definition>
+        
+        <definition name="privateLayout" template="/WEB-INF/layout/standard.jsp" >
+        	 <put-attribute name="title" value="12306ng web"/>
+        	 <put-attribute name="header" value=""/>   
+        	 <put-attribute name="body" value=""/>
+			 <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp"></put-attribute>
+			 <put-attribute name="appName" value="iSAPort"></put-attribute>
+        </definition>  
+              
 </tiles-definitions>
