@@ -1,0 +1,17 @@
+K 14
+bugtraq:append
+V 5
+false
+K 13
+bugtraq:label
+V 10
+CR# or PR#
+K 15
+bugtraq:message
+V 9
+[%BUGID%]
+K 21
+bugtraq:warnifnoissue
+V 4
+true
+END

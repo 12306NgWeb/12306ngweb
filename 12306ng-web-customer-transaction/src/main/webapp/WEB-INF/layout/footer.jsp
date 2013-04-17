@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"   pageEncoding="UTF-8"%>
 <!--bottom start-->
     <div class="bottom">
         <img src="jsp/images/bottomlogo.png" alt="12306ng-Logo" width="110" height="40" />

@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -10,7 +10,7 @@
 
 <body>
 <div class="wrap">
-    <!--header start-->
+    header start
     <div class="header">
         <img src="../images/headlogo.png" alt="header-logo" width="140" height="50" />
         <span class="headermenu fleft">
@@ -23,8 +23,13 @@
         </span>
         <span class="headerlogin fright"><a href="register.html">注册</a><a href="login.html">登录</a></span>
     </div>
-    <!--header end-->
-    
+    header end -->
+<%@ page language="java" contentType="text/html; charset=UTF-8"   pageEncoding="UTF-8"%>    
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>    
     <!--search start-->
 	<div class="ticketsearch">
     	<div class="searchdates">
@@ -81,7 +86,29 @@
                 <th class="orderstation">无座</th>
                 <th class="orderstation">等级</th>
             </tr>
+    <c:forEach items="${ticketlist}" var="ticket">        
             <tr>
+            	<td>${ticket.id}</td>
+                <td>${ticket.ticketInfo}</td>
+                <td>${ticket.beginStation}</td>
+                <td>${ticket.arriveStation}</td>
+                <td>17：29</td>
+                <td>18：39</td>
+                <td>50：00</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>有</td>
+                <td>快速</td>
+            </tr>
+           </c:forEach> 
+            <!-- <tr>
             	<td>1</td>
                 <td>G7428(杭州→上海虹桥)</td>
                 <td>杭州</td>
@@ -260,27 +287,7 @@
                 <td>-</td>
                 <td>有</td>
                 <td>快速</td>
-            </tr>
-            <tr>
-            	<td>1</td>
-                <td>G7428(杭州→上海虹桥)</td>
-                <td>杭州</td>
-                <td>上海</td>
-                <td>17：29</td>
-                <td>18：39</td>
-                <td>50：00</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>有</td>
-                <td>快速</td>
-            </tr>
+            </tr> -->
         </table>
         <p class="red pt20">*余票每十分钟更新一次，“-”表示无此席别，“0”表示已售完</p>
         <p class="red pt5" >*鼠标移到任何信息，即可放大现实</p>
@@ -288,7 +295,7 @@
     <!--search end-->
     
     <!--bottom start-->
-    <div class="bottom">
+<!--     <div class="bottom">
         <img src="../images/bottomlogo.png" alt="12306ng-Logo" width="110" height="40" />
         <span>
             <a href="">新手上路</a><em>|</em>
@@ -298,7 +305,7 @@
             <a href="">团队成员</a><em>|</em>
             <a href="">联系我们</a>
         </span>
-    </div>
+    </div> -->
     <!--bottom end-->
 </div>
 
@@ -336,5 +343,5 @@
   }
   $('#check_signed').customInput();
 </script>
-</body>
-</html>
+<!-- </body>
+</html> -->

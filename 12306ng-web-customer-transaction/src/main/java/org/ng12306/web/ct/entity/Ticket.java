@@ -1,11 +1,14 @@
 package org.ng12306.web.ct.entity;
 
+import org.hibernate.validator.constraints.NotBlank;
+
 /**
  * 车票查询结果实体如(北京-上海)---12306ngWeb
  * @author 李守宏
  * @version 1.0
  * @created 2013年3月25日 19:56:01
  */
+@SuppressWarnings("unchecked")
 public class Ticket {
 
 	/**
@@ -15,10 +18,12 @@ public class Ticket {
 	/**
 	 * 到达站
 	 */
+	@NotBlank
 	private String arriveStation;
 	/**
 	 * 出发站
 	 */
+	@NotBlank
 	private String beginStation;
 	/**
 	 * 历时
@@ -37,6 +42,17 @@ public class Ticket {
 	 * 余票信息 使用json格式{硬座:n,无座:n,硬卧:n}等
 	 */
 	private String ticketInfo;
+
+	@NotBlank
+	private String startDate;
+
+	public String getStartDate() {
+		return startDate;
+	}
+
+	public void setStartDate(String startDate) {
+		this.startDate = startDate;
+	}
 
 	/**
 	 * 到达站

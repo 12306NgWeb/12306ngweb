@@ -9,6 +9,38 @@
 </head> 
 
 <body>-->
+<%@ page language="java" contentType="text/html; charset=UTF-8"   pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+
+<script type="text/javascript" src="jsp/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="jsp/js/jquery-ui-1.10.2.custom.js"></script>
+<link rel="stylesheet" type="text/css" href="jsp/css/jquery-ui-1.10.2.custom.css" />
+
+<script src="jsp/validation/js/languages/jquery.validationEngine-zh_CN.js" type="text/javascript" charset="utf-8"></script>
+<script src="jsp/validation/js/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="jsp/validation/css/validationEngine.jquery.css" type="text/css"/>
+
+<script type="text/javascript">
+		$(document).ready(function(){
+			jQuery("#ticketSearch").validationEngine();
+			$("#startDate").datepicker({ dateFormat: "yy-mm-dd" });	
+			
+			
+		});
+		/* function getSearchResult (startDate){
+			var startDate = $("#startDate").val();
+			
+			$.getresult(startDate);
+		} */
+		
+		
+
+
+</script>
 <div class="ng-wrap">
 	<div class="ng-logo"></div>
     <div class="ng-menu">
@@ -21,12 +53,19 @@
         <span class="red"><a href="register.html">注册</a></span>
         <span class="red"><a href="login.html">登录</a></span>
     </div>
+    
+    <form id = "ticketSearch"  action = "ticketlist" commandName="ticket" method = "post" >
     <div class="ng-indexSearch">
-    	<input type="text" placeholder="出发地" name="startAdd" class="inputtxt" />
-        <input type="text" placeholder="目的地" name="endAdd" class="inputtxt" />
-        <input type="text" placeholder="出发日期" name="startDate" class="inputdate" />
-        <input type="submit" value="查询" name="search" class="btnsearch f16" />
-    </div>    
+    	<input type="text" placeholder="出发地" name=beginStation class="inputtxt validate[required] text-input" value=""/> 
+    	<%-- <form:input path = "beginStation" id = "beginStation" placeholder= "StartAddress" class="inputtxt"  /> --%>
+         <input type="text" placeholder="目的地" name="arriveStation" class="inputtxt validate[required] text-input" value=""/>
+        <%-- <form:input path = "arriveStation" id = "arriveStation" placeholder="EndAddress" class="inputtxt"  /> --%>
+        
+        <input type="text" placeholder="出发日期" name="startDate"  id = "startDate" class="inputdate validate[required] text-input datepicker" value="" />
+        <input type="submit"  id ="go" value="查询" name="search" class="btnsearch f16" " />
+        <!-- <input type="reset" value="重置"   class="btnsearch f16" algin="top" /> -->
+    </div>   
+    </form> 
 </div>
 <!-- <div class="bottom">
 	<img src="../images/bottomlogo.png" alt="12306ng-Logo" width="110" height="40" />

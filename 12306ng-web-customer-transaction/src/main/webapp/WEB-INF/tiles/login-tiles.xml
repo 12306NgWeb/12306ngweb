@@ -5,12 +5,16 @@
  
 <tiles-definitions>        
        <definition name="login" extends="standardLayout"> 
-       <put-attribute name="title" value="login in ngweb" />
-       <put-attribute name="body" value="/WEB-INF/jsp/body/login.jsp"/>
+	       <put-attribute name="title" value="login in ngweb" />
+	       <put-attribute name="body" value="/WEB-INF/jsp/body/login.jsp"/>
        </definition>
        
        <definition name="home" extends="privateLayout"> 
-       <put-attribute name="title" value="ngweb index" />
-       <put-attribute name="body" value="/WEB-INF/jsp/body/index.jsp"/>
-       </definition>       
+	       <put-attribute name="title" value="ngweb index" />
+	       <put-attribute name="body" value="/WEB-INF/jsp/body/index.jsp"/>
+       </definition>    
+       <definition name="searchResult" extends="standardLayout"> 
+	       <put-attribute name="title" value="ngweb index" />
+	       <put-attribute name="body" value="/WEB-INF/jsp/body/search.jsp"/>
+       </definition>              
 </tiles-definitions>

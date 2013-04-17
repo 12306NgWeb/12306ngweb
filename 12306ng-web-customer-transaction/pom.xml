@@ -34,6 +34,9 @@
 		<apache-commons-lang.version>2.6</apache-commons-lang.version>
 		<validator.version>1.3.1</validator.version>
 		<google.ehcache.version>1.2.0</google.ehcache.version>
+		<powermock.version>1.4.12</powermock.version>
+		<easymock.version>3.0</easymock.version>
+		<jmock.version>2.5.1</jmock.version>
 	</properties>
 
 	<dependencies>
@@ -188,12 +191,6 @@
 				<artifactId>spring-security-config</artifactId>
 				<version>${spring.version}</version>
 			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-test</artifactId>
-				<version>${spring.version}</version>
-			<scope>test</scope>
-		</dependency>
 		
 		<!-- jetty -->
 		<dependency>
@@ -280,8 +277,45 @@
 	          <groupId>javassist</groupId>  
 	          <artifactId>javassist</artifactId>  
 	          <version>${javassist.version}</version>  
-    	</dependency>  
-    					     
+    	</dependency>
+    	
+    	<!--  jmock easymock powermock-->
+		<dependency>
+			<groupId>org.powermock</groupId>
+			<artifactId>powermock-module-junit4</artifactId>
+			<version>${powermock.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.powermock</groupId>
+			<artifactId>powermock-api-easymock</artifactId>
+			<version>${powermock.version}</version>
+			<scope>test</scope> 
+		</dependency>
+		<dependency>
+			<groupId>org.easymock</groupId> 
+			<artifactId>easymock</artifactId>
+			<version>${easymock.version}</version>
+			<scope>test</scope>
+		</dependency> 
+		<dependency>
+			<groupId>org.jmock</groupId>
+			<artifactId>jmock</artifactId>
+			<version>${jmock.version}</version>
+			<scope>test</scope>
+		</dependency>	
+		
+		
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.0.0.GA</version>
+		</dependency>	
+		<dependency>
+		  <groupId>org.hibernate</groupId>
+		  <artifactId>hibernate-validator-annotation-processor</artifactId>
+		  <version>4.1.0.Final</version>
+		</dependency>				   					     
 	</dependencies>
 
 	
