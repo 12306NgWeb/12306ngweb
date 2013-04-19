@@ -77,8 +77,14 @@ public class HomeController {
 
 		return "searchResult";
 		}
+
 	}
 
+	@RequestMapping(value = "/ticketlist", method = RequestMethod.GET)
+	public String showSearch(Model model) {
+
+		return "searchResult";
+	}
 	/*@RequestMapping(value = "/ticketresult")
 	public String showSearchResult() {
 

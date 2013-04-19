@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"   pageEncoding="UTF-8"%>
 <!--bottom start-->
     <div class="bottom">
-        <img src="jsp/images/bottomlogo.png" alt="12306ng-Logo" width="110" height="40" />
+        <img src="<%=request.getContextPath()%>/jsp/images/bottomlogo.png" alt="12306ng-Logo" width="110" height="40" />
         <span>
             <a href="">新手上路</a><em>|</em>
             <a href="">常见问题</a><em>|</em>

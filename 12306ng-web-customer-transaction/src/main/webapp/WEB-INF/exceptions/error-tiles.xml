@@ -5,56 +5,11 @@
 <tiles-definitions>
 
 	<definition name="wrappedHTMLException" extends="standardLayout">
-		<put-attribute name="body" value="/WEB-INF/exceptions/htmlException.jsp" />
-		<put-attribute name="featureName" value="error"></put-attribute>
-		<put-attribute name="menu" value="/WEB-INF/layout/menu.jsp"/>        	 
-       	<put-attribute name="title" value="An error has occured. Support Automation Portal (iSAPort)"/>
-		<put-attribute name="appName" value="iSAPort-Exceptions"></put-attribute>
 	</definition>
-
-	<definition name="unwrappedHTMLException" extends="unwrappedLayout">
-		<put-attribute name="body" value="/WEB-INF/exceptions/htmlException.jsp" />
-		<put-attribute name="appName" value="iSAPort-Exceptions"></put-attribute>
-	</definition>
-
-	<definition name="businessError" extends="standardLayout">
-		<put-attribute name="body" value="/WEB-INF/exceptions/businessError.jsp" />
-		<put-attribute name="appName" value="iSAPort-Exceptions"></put-attribute>
-		<put-attribute name="featureName" value="businessError"></put-attribute>
-		<put-attribute name="menu" value="/WEB-INF/layout/menu.jsp"/>        	 
-       	<put-attribute name="title" value="Error happens. Support Automation User Interface (iSAPort)"/>
-	</definition>
-
-	<definition name="systemError" extends="standardLayout">
-		<put-attribute name="body" value="/WEB-INF/exceptions/systemError.jsp" />
-		<put-attribute name="appName" value="iSAPort-Exceptions"></put-attribute>
-		<put-attribute name="featureName" value="systemError"></put-attribute>
-		<put-attribute name="menu" value="/WEB-INF/layout/menu.jsp"/>        	 
-        <put-attribute name="title" value="Error happens. Support Automation User Interface (iSAPort)"/>
-	</definition>
-
-	<definition name="unknownError" extends="standardLayout">
-		<put-attribute name="body" value="/WEB-INF/exceptions/unknownError.jsp" />
-		<put-attribute name="appName" value="iSAPort-Exceptions"></put-attribute>
-		<put-attribute name="featureName" value="unknownError"></put-attribute>
-		<put-attribute name="menu" value="/WEB-INF/layout/menu.jsp"/>        	 
-        <put-attribute name="title" value="Error happens. Support Automation User Interface (iSAPort)"/>
-	</definition>
-	
    <definition name="permissionError" extends="standardLayout">
-		<put-attribute name="body" value="/WEB-INF/exceptions/permissionError.jsp" />
-		<put-attribute name="appName" value="iSAPort-Exceptions"></put-attribute>
-		<put-attribute name="featureName" value="permissionError"></put-attribute>
-		<put-attribute name="menu" value="/WEB-INF/layout/menu.jsp"/>        	 
-        <put-attribute name="title" value="Error happens. Support Automation User Interface (iSAPort)"/>
 	</definition>
 		
 	<definition name="responseStatusCode" extends="standardLayout">
-		<put-attribute name="body" value="/WEB-INF/exceptions/responseStatusCode.jsp" />
-		<put-attribute name="appName" value="iSAPort-Exceptions"></put-attribute>
-		<put-attribute name="featureName" value="statusCode"></put-attribute>
-		<put-attribute name="menu" value="/WEB-INF/layout/menu.jsp"/>        	 
-        <put-attribute name="title" value="Support Automation User Interface (iSAPort) - Http Status Code"/>
 	</definition>		
 	
 </tiles-definitions>
