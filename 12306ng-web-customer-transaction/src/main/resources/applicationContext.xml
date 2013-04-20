@@ -15,7 +15,8 @@
 
     <!-- JSR303 Validator定义 -->
     <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean" />
-
+    
+     
     <!-- production环境 -->
     <beans profile="production">
         <context:property-placeholder ignore-unresolvable="true"
@@ -27,6 +28,9 @@
         <context:property-placeholder ignore-resource-not-found="true"
                                       location="classpath*:/application.properties,
           			  classpath*:/application.development.properties" />
+         			  
+          			 
+      			  
     </beans>
 
     <!-- functional test 环境 -->
