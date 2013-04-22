@@ -15,9 +15,9 @@
 	<tiles:insertAttribute name="title" ignore="true" />
 </title>
 
-<script type="text/javascript" src="${url}/jsp/js/jquery-1.8.2.min.js"></script>
-<link rel="stylesheet" type="text/css" href="${url}/jsp/css/base.css" />
-<link rel="stylesheet" type="text/css" href="${url}/jsp/css/main.css" />
+<script type="text/javascript" src="<c:url value='/js/jquery-1.8.2.min.js'/>"></script>
+<link rel="stylesheet" type="text/css" href="<c:url value='/css/base.css'/>" />
+<link rel="stylesheet" type="text/css" href="<c:url value='/css/main.css'/>" />
 
 </head>
 <body>
