@@ -14,12 +14,12 @@
     <div class="header">
         <img src="../images/headlogo.png" alt="header-logo" width="140" height="50" />
         <span class="headermenu fleft">
-            <a href="">首页</a>
+            <a href="index.html">首页</a>
             <a href="search.html">查询</a>
-            <a href="">购票</a>
-            <a href="">退票</a>
-            <a href="">帮助</a>
-            <a href="">反馈</a>
+            <a href="bookticket.html">购票</a>
+            <a href="returnticket.html">退票</a>
+            <a href="help.html">帮助</a>
+            <a href="feedback.html">反馈</a>
         </span>
         <span class="headerlogin fright"><a href="">我的12306</a></span>
         <div id="myshow" style="display: none;">

@@ -1,0 +1,25 @@
+@charset "utf-8";
+/*order*/
+.ordercons{ position:relative; margin: 5px auto; line-height:30px; }
+.otitle{ display: inline-block; position:absolute; left: 0; top: 0; width: 100px; height:35px;  }
+.tags, .ordertypeselect{ clear:both; height:30px; list-style:none outside none; margin:0 0 -1px; padding:0; position:relative; left: 80px; }
+.tags li , .ordertypeselect li{ cursor:pointer; float:left; margin-right:6px; }
+.tags li a , .ordertypeselect li a{ color:#36C; display:block; line-height:30px; padding:0 1em; text-decoration:none; }
+.tags li.current { border-bottom-style:none; font-weight:700; height:30px; }
+.tags li.current a { color:#C63; outline:0; }
+.panes { margin-top: 15px;}
+
+.ticketout{ overflow:hidden; margin: 5px auto 10px auto; width: 100%; }
+.ticketout .tableheader, .ticketout .tableheader:hover{ height:32px; line-height: 34px; background: #eef5ff; border-top: 1px solid #def; border-bottom: 1px solid #def;}
+.ticketout tr{ border-bottom: 1px solid #ddd;}
+.ticketout th{padding:0 10px; color: #38e}
+.ticketout td{padding:10px; text-align:center;}
+.ticketout tr:hover{ background: #fafafa;}
+.ticketout a{ text-decoration: none;}
+.btnpay, .btnpaycancel, .btnpaychange{ width: 90px; height: 28px; line-height: 28px; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; vertical-align: middle;}
+.btnpay{ border: none; background: #38e; color: #fff;}
+.btnpaycancel, .btnpaychange{ background: #fafafa; border: 1px solid #ddd;}
+.tips{ margin-top: 20px; padding: 10px; border-top: 1px dashed #ddd; }
+.tips p{ line-height: 25px;}
+
+.singleselect{ width: 120px; height:26px; line-height: 26px; }

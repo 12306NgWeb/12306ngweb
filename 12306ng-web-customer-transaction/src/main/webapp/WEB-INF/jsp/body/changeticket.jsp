@@ -35,7 +35,6 @@
     
     <!--user information for register start-->
 	<div class="bookorder">
-		<div class="bookstep"><img src="../images/step1.png" alt="填写订单信息" width="1000" height="34" /></div>
 		<!--trains information start-->
 		<fieldset class="userinfors traininfos">
         	<legend>列车信息</legend>
@@ -62,51 +61,47 @@
 				<span>无座(48.00元)</span>
 				<span class="green">有票</span>
 			</p>
+            <p class="red">以上余票信息随时发生变化，仅作参考</p>
         </fieldset>
-		<!--trains information end>
+		<!--trains information end-->
 
-		<!--trains information detail start-->
-        <div class="travelcontact">
-            <table border="0" class="travelinfo">
+		<div class="travelcontact changetrin">
+			<h2 class="tableheader">改签原票信息</h2>
+			<table border="0" class="travelinfo">
                 <tr class="tableheader">
-                    <th class="torder">车次</th>
-                    <th class="tdate">出发时间</th>
-                    <th class="tstartadd">出发站</th>
-                    <th class="tendadd">目的地</th>
-                    <th class="ttime">历时</th>
-                    <th class="tdo"></th>
+                    <th class="ctname">姓名</th>
+                    <th class="ctcard">证件类型</th>
+                    <th class="ctID">证件号</th>
+                    <th class="ctdate">出发日期</th>
+                    <th class="ctadds">出发地</th>
+                    <th class="ctadde">目的地</th>
+                    <th class="cttype">票种</th>
+                    <th class="ctorder">车次</th>
+                    <th class="ctsate">席别</th>
+                    <th class="cttrain">车厢</th>
+                    <th class="ctnum">座位号</th>
+                    <th class="ctprice">票价</th>
                 </tr>
                 <tr>
-                    <td class="torder">T1234</td>
-                    <td class="tdate">2013年3月3日</td>
-                    <td class="tstartadd">北京西（8：00开）</td>
-                    <td class="tendadd">上海虹桥（12：55到）</td>
-                    <td class="ttime">4小时55分</td>
-                    <td class="tdo"><a href="changeticket.html" class="blue">[更改车次]</a></td>
-                </tr>
-                <tr>
-                    <td class="torder">T1234</td>
-                    <td class="tdate">2013年3月3日</td>
-                    <td class="tstartadd">北京西（8：00开）</td>
-                    <td class="tendadd">上海虹桥（12：55到）</td>
-                    <td class="ttime">4小时55分</td>
-                    <td class="tdo"><a href="changeticket.html" class="blue">[更改车次]</a></td>
+                    <td class="ctname">Jane</td>
+                    <td class="ctcard">二代身份证</td>
+                    <td class="ctID">400000000000000000</td>
+                    <td class="ctdate">2012-03-13</td>
+                    <td class="ctadds">北京<br/>（23：30开）</td>
+                    <td class="ctadde">天津<br/>（01：15到）</td>
+                    <td class="cttype">成人票</td>
+                    <td class="ctorder">4411</td>
+                    <td class="ctsate">硬卧</td>
+                    <td class="cttrain">10</td>
+                    <td class="ctnum">01号中铺</td>
+                    <td class="ctprice">71.50元</td>
                 </tr>
             </table>
-        </div>
-		<!--trains information detail end-->
-
-		<!--trains relationship start-->
-		<div class="travelcontact">
-			<h2 class="tableheader">常用联系人</h2>
-			<p class="contactcheck">
-				<span><input type="checkbox" name="checkuser" /><label>Jane</label></span>
-			</p>
 		</div>
-		<!--trains relationship end>
 
 		<!--trains relationship start-->
 		<div class="travelcontact">
+        	<h2 class="tableheader">乘车人信息</h2>
 			<table border="0" class="travelinfo" >
 				<tr class="tableheader">
 					<th class="iorder">序号</th>
@@ -116,7 +111,6 @@
 					<th class="icard">证件类型</th>
 					<th class="icid">证件号码</th>
 					<th class="iphone">手机号</th>
-					<th class="iuse"><input type="checkbox" /><label>保存到常用联系人</label></th>
 					<th class="ido">操作</th>
 				</tr>
 				<tr>
@@ -141,55 +135,13 @@
                 </select></td>
 					<td class="icid"><input type="text" name="username" class="contactid" /></td>
 					<td class="iphone"><input type="text" name="username" class="contactphone" /></td>
-					<td class="iuse"><input type="checkbox" /><label>保存到常用联系人</label></td>
-					<td class="ido"><a href="" class="blue">[删除]</a></td>
-				</tr>
-				<tr>
-					<td class="iorder">第一位</td>
-					<td class="isite"><select>
-						<option>硬座</option>
-						<option>软座</option>
-						<option>卧铺</option>
-					</select></td>
-					<td class="iticket"><select>
-						<option>成人票</option>
-						<option>儿童票</option>
-                        <option>学生票</option>
-                        <option>残军票</option>
-					</select></td>
-					<td class="iname"><input type="text" name="username" class="contactname" /></td>
-					<td class="icard"><select>
-                        <option>二代身份证</option>
-                        <option>港澳通行证</option>
-                        <option>台湾通行证</option>
-                        <option>护照</option>
-                </select></td>
-					<td class="icid"><input type="text" name="username" class="contactid" /></td>
-					<td class="iphone"><input type="text" name="username" class="contactphone" /></td>
-					<td class="iuse"><input type="checkbox" /><label>保存到常用联系人</label></td>
-					<td class="ido"><a href="" class="blue">[删除]</a></td>
+					<td class="ido"><a href="" class="blue">[改签]</a></td>
 				</tr>			
 			</table>
-			<p class="tcenter mt10"><a href="addcontact.html"><input type="submit" name="adduser" class="btnadduser" value="新增"/></a></p>
-			<div class="describinfos">
-				<p>1. 一张有效身份证件同一乘车日期同一车次只能购买一张车票。</p>
-				<p>2. 购票时可使用的有效身份证件包括：中华人民共和国居民身份证、港澳居民来往内地通行证、台湾居民来往大陆通行证和按规定可使用的有效护照。 </p>
-				<p>3. 购买儿童票时，乘车儿童有有效身份证件的，请填写本人有效身份证件信息。乘车儿童没有有效身份证件的，应使用同行成年人的有效身份证件信息；购票时不受前条限制，但购票
-	后、开车前须办理换票手续方可进站乘车。 </p>
-				<p>4. 购买学生票时，须在我的常用联系人中登记乘车人的学生详细信息。学生票乘车时间限为每年的暑假6月1日至9月30日、寒假12月1日至3月31日。购票后、开车前，须办理换票手续
-	方可进站乘车。换票时，新生凭录取通知书，毕业生凭学校书面证明，其他凭学生优惠卡。</p>
-				<p>5. 购买残疾军人（伤残警察）优待票的，须在购票后、开车前办理换票手续方可进站乘车。换票时，不符合规定的减价优待条件，没有有效"中华人民共和国残疾军人证"或"中华人民共
-	和国伤残人民警察证"的，不予换票，所购车票按规定办理退票手续。 </p>
-			</div>
 		</div>
 		<!--trains relationship start-->
-
-		<!--trains order start-->
-		<div class="tickettotle">
-			<p class="tright">预购票数：<strong>4</strong> 张   总票价：<strong class="orange">412.00 元</strong></p>
-		</div>
 		
-		<p class="pt20 tcenter"><input type="submit" name="submit" value="提交" onClick="infoshow()" class="btnaddticket mr15" /><input type="submit" name="submit" value="清空" class="btnresetticket" /></p>
+		<p class="pt20 tcenter"><input type="submit" name="submit" value="取消改签" class="btnresetticket mr10" /><input type="submit" name="submit" value="重新选择" class="btnresetticket mr10" /><input type="submit" name="submit" value="提交订单" onClick="infoshow()" class="btnaddticket mr15" /></p>
 		<!--trains order start-->
 	</div>
     <!--user information for register end-->
@@ -227,8 +179,9 @@
 			<span>15888888888</span>
 		</li>
     </ul>
+    <p class="mt10">尊敬的旅客，本次列车您选择的席别尚有余票<span class="red">89</span>张，无座<span class="red">344</span>张，特此提醒。</p>
 	<p class="red mt10">请确认订单信息是否正确，如正确请点击“确认”按钮，系统将为您随机分配席位</p>
-	<p class="tcenter mt20"><a href="confirmticket.html"><input type="submit" name="submit" class="btnsubmit mr20" /></a><input type="submit" name="submit" class="btncancel" /></p>
+	<p class="tcenter mt20"><a href="changeconfirm.html"><input type="submit" name="submit" class="btnsubmit mr20" value="确定" /></a><input type="submit" name="submit" class="btncancel" value="取消" /></p>
 </div>
 <!---->
 <script>

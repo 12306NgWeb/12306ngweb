@@ -4,14 +4,14 @@
     <!-- <div class="header">
         <img src="../images/headlogo.png" alt="header-logo" width="140" height="50" />
         <span class="headermenu fleft">
-            <a href="index.html">首页</a>
-            <a href="search.html">查询</a>
-            <a href="bookticket.html">购票</a>
-            <a href="">退票</a>
-            <a href="help.html">帮助</a>
-            <a href="feedback.html">反馈</a>
+            <a href="index.html">é¦é¡µ</a>
+            <a href="search.html">æ¥è¯¢</a>
+            <a href="bookticket.html">è´­ç¥¨</a>
+            <a href="">éç¥¨</a>
+            <a href="help.html">å¸®å©</a>
+            <a href="feedback.html">åé¦</a>
         </span>
-        <span class="headerlogin fright"><a href="register.html">注册</a><a href="login.html">登录</a></span>
+        <span class="headerlogin fright"><a href="register.html">æ³¨å</a><a href="login.html">ç»å½</a></span>
     </div> -->
     <!--header end-->
     
@@ -20,7 +20,7 @@
         <legend>登录：</legend>
         <ul>
             <li><label><em>*</em>用户名：</label><input type="text" name="userName" class="inputname" />
-            <p>请输入您的用户名</p></li>				
+            <p>请输入您的用户名</p></li>    			
             <li><label><em>*</em>密码：</label><input type="text" name="userName" class="inputname" />
             <p>请输入密码</p></li>
             <li><label><em>*</em>验证码：</label><input type="text" name="userName" class="inputname" /><img src="" />
@@ -35,12 +35,12 @@
     <!-- <div class="bottom">
         <img src="../images/bottomlogo.png" alt="12306ng-Logo" width="110" height="40" />
         <span>
-            <a href="">新手上路</a><em>|</em>
-            <a href="">常见问题</a><em>|</em>
-            <a href="">意见反馈</a><em>|</em>
-            <a href="">关于 12306NG</a><em>|</em>
-            <a href="">团队成员</a><em>|</em>
-            <a href="">联系我们</a>
+            <a href="">æ°æä¸è·¯</a><em>|</em>
+            <a href="">å¸¸è§é®é¢</a><em>|</em>
+            <a href="">æè§åé¦</a><em>|</em>
+            <a href="">å³äº 12306NG</a><em>|</em>
+            <a href="">å¢éæå</a><em>|</em>
+            <a href="">èç³»æä»¬</a>
         </span>
     </div> -->
     <!--bottom end-->

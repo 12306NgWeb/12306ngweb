@@ -41,7 +41,7 @@
     <div class="ng-menu">
     	<span>查询</span>
         <span class="blue"><a href="bookticket.html">购票</a></span>
-        <span class="blue"><a href="">退票</a></span>
+        <span class="blue"><a href="returnticket.html">退票</a></span>
         <span class="blue"><a href="help.html">帮助</a></span>
         <span class="blue"><a href="feedback.html">反馈</a></span>
         <span>|</span>

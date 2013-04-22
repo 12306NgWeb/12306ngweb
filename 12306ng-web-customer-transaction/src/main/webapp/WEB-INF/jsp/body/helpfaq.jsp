@@ -25,29 +25,20 @@
     </div>
     <!--header end-->
     
-    <!--user information start-->
-	<div class="myorder">
-		<div class="position">我的12306 > 我的信息 > 修改密码</div>
-		<div class="orderleft fleft">
-			<ul>
-				<li>我的订单</li>
-				<li><a href="order.html">订单查询</a></li>
-				<li>我的信息</li>
-				<li><a href="mycontact.html">常用联系人</a></li>
-				<li><a href="myinfos.html">个人资料</a></li>
-				<li class="infosurrent"><a href="mypassword.html">密码修改</a></li>
-			</ul>
+    <!--help information start-->
+
+	<fieldset class="userinfors userhelp">
+		<legend>帮助中心</legend>
+		<div class="usersearch"><input type="text" name="userName" class="inputname" /><input type="submit" name="userName" class="btnhelp ml10 mr20" /><span>热门问题：<a href="" class="blue">购票</a><a href="" class="blue">退票</a><a href="" class="blue">改签</a><a href="" class="blue">换取</a><a href="" class="blue">支付</a></span></div>
+        <h1 class="pt15 tcenter">　旅客在12306网站购票成功，在窗口取票时为何系统提示错误？</h1>
+		<div class="helplist helpfaq">
+            <p>产生这种情况,主要原因是旅客在网上购票时,订票人将乘车人的有效证件号码输入错误,或者在购买儿童票时，使用儿童户口簿上的身份证号码，但取票时，使用了成
+   人身份证件。遇有上述情况时,请旅客到车站售票厅值班主任窗口办理。 请旅客在www.12306.cn网站购买车票时,正确录入相关信息,认真核对乘车人有效证件号码。</p>
+            <p class="tright"><a href="">此信息有帮助</a><a href="">此信息无帮助</a></p>
 		</div>
-		<div class="orderright fright myinfos">
-			<ul>
-				<li><label>原密码：</label><input type="text" name="add" class="inputpwd " /></li>
-				<li><label>新密码：</label><input type="text" name="add" class="inputpwd " /></li>
-				<li><label>确认新密码：</label><input type="text" name="add" class="inputpwd " /></li>
-			</ul>
-			<p class="pt10 tcenter btnmodify"><input type="submit" name="add" class="btnadd mr10" value="修改" /></p>
-		</div>
-	</div>
-    <!--user information end-->
+	</fieldset>
+
+    <!--help information end-->
     
     <!--bottom start-->
     <div class="bottom">

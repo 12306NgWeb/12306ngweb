@@ -17,7 +17,7 @@
             <a href="index.html">首页</a>
             <a href="search.html">查询</a>
             <a href="bookticket.html">购票</a>
-            <a href="">退票</a>
+            <a href="returnticket.html">退票</a>
             <a href="help.html">帮助</a>
             <a href="feedback.html">反馈</a>
         </span>
@@ -30,7 +30,7 @@
         <legend>基本信息：</legend>
         <ul>
             <li><label><em>*</em>用户名：</label><input type="text" name="userName" class="inputname" />
-            <p>用户名由字母、数字或“_”组成，长度不少于6位，不多于30位</p></li>				
+            <p>用户名由字母、数字或“_”组成，长度不少于6位，不多于30位</p></li>    			
             <li><label><em>*</em>密码：</label><input type="text" name="userName" class="inputname" />
             <p>密码不得少于6位字符</p></li>
             <li><label><em>*</em>确认密码：</label><input type="text" name="userName" class="inputname" />

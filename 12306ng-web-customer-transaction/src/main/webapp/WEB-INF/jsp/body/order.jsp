@@ -17,7 +17,7 @@
             <a href="index.html">首页</a>
             <a href="search.html">查询</a>
             <a href="bookticket.html">购票</a>
-            <a href="">退票</a>
+            <a href="returnticket.html">退票</a>
             <a href="help.html">帮助</a>
             <a href="feedback.html">反馈</a>
         </span>
@@ -144,14 +144,14 @@
 								<p>代用名</p>
 								<p>二代身份证</p>
 							</td>
-							<td><span class="green">待付款</span></td>
+							<td><span class="green">已付款</span></td>
 							<td>
-								<p><a href="" class="blue">[退票]</a></p>
-								<p><a href="" class="blue">[改签]</a></p>
+								<p><a href="returnticket.html" class="blue">[退票]</a></p>
+								<p><a href="changeticket.html" class="blue">[改签]</a></p>
 							</td>
 						</tr>						
 					</table>
-					<p class="tright mb20"><input type="submit" name="submit" class="btnpaychange mr10" value="全部改签"/><input type="submit" name="submit" class="btnpaychange" value="全部退票"/></p>
+					<p class="tright mb20"><a href="changeticket.html"><input type="submit" name="submit" class="btnpaychange mr10" value="全部改签"/></a><a href="returnticket.html"><input type="submit" name="submit" class="btnpaychange" value="全部退票"/></a></p>
 					<table border="0" class="ticketout">
 						<tr class="tableheader">
 							<th colspan="4">订票日期：2013-01-31</th>
@@ -228,8 +228,8 @@
 							</td>
 							<td><span class="green">待付款</span></td>
 							<td>
-								<p><a href="" class="blue">[退票]</a></p>
-								<p><a href="" class="blue">[改签]</a></p>
+								<p><a href="returnticket.html" class="blue">[退票]</a></p>
+								<p><a href="changeticket.html" class="blue">[改签]</a></p>
 							</td>
 						</tr>
 						<tr>
@@ -253,7 +253,7 @@
 							</td>
 						</tr>						
 					</table>
-					<p class="tright mb20"><input type="submit" name="submit" class="btnpaychange mr10" value="全部改签"/><input type="submit" name="submit" class="btnpaychange" value="全部退票"/></p>
+					<p class="tright mb20"><a href="changeticket.html"><input type="submit" name="submit" class="btnpaychange mr10" value="全部改签"/></a><a href="returnticket.html"><input type="submit" name="submit" class="btnpaychange" value="全部退票"/></a></p>
 				</div>
 				<!--payment have been end-->
 				
