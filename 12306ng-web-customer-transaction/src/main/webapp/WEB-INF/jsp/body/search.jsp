@@ -25,17 +25,15 @@
     </div>
     header end -->
 <%@ page language="java" contentType="text/html; charset=UTF-8"   pageEncoding="UTF-8"%>    
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>    
+
+<script src="<c:url value='/js/common.js'/>"></script>
+
     <!--search start-->
 	<div class="ticketsearch">
     	<div class="searchdates">
             <input type="text" placeholder="出发地" name="startAdd" class="inputtxt" />
-            <input type="text" placeholder="目的地" name="endAdd" class="inputtxt" />
-            <input type="text" placeholder="出发日期" name="startDate" class="inputdate" />
+            <input type="text" placeholder="目的地" name="endAdd" class="inputtxt inputerror" id="inputerror" />
+            <input type="text" placeholder="出发日期" name="startDate" class="inputdate"  onClick="WdatePicker()"/>
             <input type="submit" value="查询" name="search" class="btnsearch f16" />
         </div> 
         <div class="searchdates">
