@@ -7,7 +7,15 @@ package org.ng12306.web.ct.entity;
  * @created 2013年3月25日 20:04:22
  */
 public class User {
+	/**
+	 * The default user profile id
+	 */
+	public static final String ANONYMOUS_USER_PROFILE_ID = "0";
 
+	/**
+	 * The default user name
+	 */
+	public static final String ANONYMOUS_USER_NAME = "Anonymous";
 	/**
 	 * 主键
 	 */
@@ -29,6 +37,7 @@ public class User {
 	 * 邮箱
 	 * @return
 	 */
+	
 	public String getEmail() {
 		return email;
 	}

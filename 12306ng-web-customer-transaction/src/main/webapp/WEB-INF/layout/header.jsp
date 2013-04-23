@@ -12,6 +12,22 @@
             <a href="${url}/show/help">帮助</a>
             <a href="feedback.html">反馈</a>
         </span>
-        <span class="headerlogin fright"><a href="register.html">注册</a><a href="login.html">登录</a></span>
+        <c:choose>
+		   <c:when test=" ${loginUserProfile.userName != 'Anonymous'}"> 
+		      <span class="headerlogin fright"><a href="register.html">注册</a><a href="login.html">登录</a></span>
+		   </c:when>
+		   <c:otherwise> 
+		 		<span class="headerlogin fright"><a href="">我的12306</a></span>
+			        <div id="myshow" style="display: none;">
+			        	<ul>
+			            	<li><a href="bookticket.html">车票预定</a></li>
+			                <li><a href="order.html">我的订单</a></li>
+			                <li><a href="myinfos.html">个人信息</a></li>
+			                <li><a href="index.html">登出</a></li>
+			            </ul>
+			        </div>
+		   </c:otherwise>
+
+		</c:choose>
     </div>
     <!--header end-->

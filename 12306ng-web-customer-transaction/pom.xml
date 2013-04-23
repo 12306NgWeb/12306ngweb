@@ -348,7 +348,7 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<configuration>
 					<warName>ngweb</warName>
-					<outputDirectory>E:\E\ftp_share\software\apache-tomcat-6.0.32\apache-tomcat-6.0.32\webapps</outputDirectory>
+					<outputDirectory>D:\ftp_share\software\apache-tomcat-6.0.32\apache-tomcat-6.0.32\webapps</outputDirectory>
 				</configuration>
 			</plugin>			
 			<!-- test插件, 仅测试名称为*Test的类,使用支持分组测试的surefire-junit47 driver -->
