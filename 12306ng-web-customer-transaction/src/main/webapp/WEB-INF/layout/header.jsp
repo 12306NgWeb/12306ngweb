@@ -11,10 +11,12 @@
             <a href="">退票</a>
             <a href="${url}/show/help">帮助</a>
             <a href="feedback.html">反馈</a>
+
         </span>
-        <c:choose>
-		   <c:when test=" ${loginUserProfile.userName != 'Anonymous'}"> 
-		      <span class="headerlogin fright"><a href="register.html">注册</a><a href="login.html">登录</a></span>
+		
+     <c:choose>
+		   <c:when test="${loginUserProfile.userName == 'Anonymous'}"> 		      		      
+		           <span class="headerlogin fright"><a href="register.html">注册</a><a href="login.html">登录</a></span>
 		   </c:when>
 		   <c:otherwise> 
 		 		<span class="headerlogin fright"><a href="">我的12306</a></span>
@@ -28,6 +30,7 @@
 			        </div>
 		   </c:otherwise>
 
-		</c:choose>
+		</c:choose> 		
+		
     </div>
     <!--header end-->
