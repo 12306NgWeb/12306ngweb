@@ -37,7 +37,26 @@ public class User {
 	 * 邮箱
 	 * @return
 	 */
-	
+	/**
+	 * 关联票ID
+	 * String
+	 */
+	private String associatedTicketId;
+
+	/**
+	 * @return 票ID
+	 */
+	public String getAssociatedTicketId() {
+		return associatedTicketId;
+	}
+
+	/**
+	 * @param associatedTicketId
+	 */
+	public void setAssociatedTicketId(String associatedTicketId) {
+		this.associatedTicketId = associatedTicketId;
+	}
+
 	public String getEmail() {
 		return email;
 	}

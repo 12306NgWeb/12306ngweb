@@ -54,7 +54,7 @@ public class AuthenticationFilter implements Filter {
 					userProfileRetriever = new ClassPathUserProfileRetriever();
 				
 					userProfile = userProfileRetriever.retrieveUser();*/
-				httpServletRequest.getSession().setAttribute(USER_PROFILE_ATTR, userProfile);
+				//httpServletRequest.getSession().setAttribute(USER_PROFILE_ATTR, userProfile);
 		}
 		
 		//TODO handle request history

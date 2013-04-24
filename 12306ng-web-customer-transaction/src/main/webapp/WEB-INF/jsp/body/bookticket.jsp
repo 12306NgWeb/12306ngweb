@@ -1,4 +1,6 @@
-<!doctype html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"   pageEncoding="UTF-8"%>
+<%@ include file="/WEB-INF/layout/include.jsp"%>
+<!-- <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -10,7 +12,7 @@
 
 <body>
 <div class="wrap">
-    <!--header start-->
+    header start
     <div class="header">
         <img src="../images/headlogo.png" alt="header-logo" width="140" height="50" />
         <span class="headermenu fleft">
@@ -30,12 +32,12 @@
                 <li><a href="index.html">登出</a></li>
             </ul>
         </div>
-    </div>
+    </div> -->
     <!--header end-->
     
     <!--user information for register start-->
 	<div class="bookorder">
-		<div class="bookstep"><img src="../images/step1.png" alt="填写订单信息" width="1000" height="34" /></div>
+		<div class="bookstep"><img src="<c:url value='/images/step1.png'/>" alt="填写订单信息" width="1000" height="34" /></div>
 		<!--trains information start-->
 		<fieldset class="userinfors traininfos">
         	<legend>列车信息</legend>
@@ -195,7 +197,7 @@
     <!--user information for register end-->
     
     <!--bottom start-->
-    <div class="bottom">
+    <!-- <div class="bottom">
         <img src="../images/bottomlogo.png" alt="12306ng-Logo" width="110" height="40" />
         <span>
             <a href="">新手上路</a><em>|</em>
@@ -205,7 +207,7 @@
             <a href="">团队成员</a><em>|</em>
             <a href="">联系我们</a>
         </span>
-    </div>
+    </div> -->
     <!--bottom end-->
 </div>
 
@@ -249,5 +251,5 @@ $(function() {
 		})
 });
 </script>
-</body>
-</html>
+<!-- </body>
+</html> -->

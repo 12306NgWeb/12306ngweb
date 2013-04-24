@@ -26,6 +26,7 @@
     header end -->
 <%@ page language="java" contentType="text/html; charset=UTF-8"   pageEncoding="UTF-8"%>    
 <%@ include file="/WEB-INF/layout/include.jsp"%> 
+<c:set var="url" value="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/ngweb" scope="page" />
 <script src="<c:url value='/js/common.js'/>"></script>
     <!--search start-->
 	<div class="ticketsearch">
@@ -99,7 +100,7 @@
                 <td>-</td>
                 <td>-</td>
                 <td>有</td>
-                <td><a href="bookticket.html" class="blue">[预定]</a></td>
+                <td><a href="${url}/book/${ticket.id}" class="blue">[预定]</a></td>
             </tr>
            </c:forEach> 
             <!-- <tr>

@@ -1,5 +1,5 @@
-
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"   pageEncoding="UTF-8"%>
+<%@ include file="/WEB-INF/layout/include.jsp"%>
     <!--header start-->
     <!-- <div class="header">
         <img src="../images/headlogo.png" alt="header-logo" width="140" height="50" />
@@ -16,19 +16,22 @@
     <!--header end-->
     
     <!--user login start-->
+    <form id ="loginform" action="/ngweb/home/login" method = "post" >
+    <input type='hidden' name="associatedTicketId" value="${ticketId}"/>
+    
     <fieldset class="userinfors userlogin">
         <legend>登录：</legend>
         <ul>
             <li><label><em>*</em>用户名：</label><input type="text" name="userName" class="inputname" />
             <p>请输入您的用户名</p></li>    			
-            <li><label><em>*</em>密码：</label><input type="text" name="userName" class="inputname" />
+            <li><label><em>*</em>密码：</label><input type="text" name="password" class="inputname" />
             <p>请输入密码</p></li>
-            <li><label><em>*</em>验证码：</label><input type="text" name="userName" class="inputname" /><img src="" />
+            <li><label><em>*</em>验证码：</label><input type="text" name="securitycode" class="inputname" /><img src="" />
             <p>看不清，<a class="blue" href="">换一张</a></p></li>
         </ul>
     </fieldset>
     <p class="tcenter"><a href="order.html"><input type="submit" name="login" class="btnlogin mr20" value="登录" /></a><a href="register.html"><input type="submit" name="register" class="btnreg" value="注册新账号" /></a></p>
-  
+  </form>
     <!--user login end-->
     
     <!--bottom start-->

@@ -8,7 +8,6 @@
 <c:set var="url" value="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/ngweb" scope="page" />
 
       
-      
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>
