@@ -1,79 +1,62 @@
-/*
- * Copyright Notice ====================================================
- * This file contains proprietary information of Hewlett-Packard Co.
- * Copying or reproduction without prior written approval is prohibited.
- * Copyright (c) 2012 All rights reserved. =============================
- */
-
 package org.ng12306.web.ct.controller;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-
 import org.jmock.Expectations;
 import org.jmock.Mockery;
+import org.jmock.integration.junit4.JMock;
+import org.jmock.lib.legacy.ClassImposteriser;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.ng12306.web.ct.entity.Ticket;
 import org.ng12306.web.ct.service.ITicketSearchService;
 import org.springframework.ui.ExtendedModelMap;
-
-
+import org.springframework.validation.BindingResult;
+@RunWith(JMock.class)
 public class HomeControllerTest {
-	ExtendedModelMap model;
+	ExtendedModelMap model = new ExtendedModelMap();;
 
-	ITicketSearchService ticketSearchService;
-	HomeController c;
-	Mockery context;
-	HttpServletRequest request;
-	HttpSession session;
+	private ITicketSearchService mockTicketSearchService;
+	private HomeController controller;
+	private Mockery context;
+	private BindingResult bindingResult;
 	@Before
 	public void setUp() throws Exception {
 		context = new Mockery();
-		request = context.mock(HttpServletRequest.class);
-		session = context.mock(HttpSession.class);
-		/* 
-		context = new Mockery() {{
-		    setImposteriser(ClassImposteriser.INSTANCE);
-		}};
-		*/
-
-		ticketSearchService = context.mock(ITicketSearchService.class);
-		c = new HomeController();
+		context.setImposteriser(ClassImposteriser.INSTANCE);
+		bindingResult = context.mock(BindingResult.class);
+		mockTicketSearchService = context.mock(ITicketSearchService.class);
+		controller = new HomeController();
+		controller.setTicketSearchService(mockTicketSearchService);
 
 	}
 	@Test
-	public void testGetTicketDetailJson() {
+	public void testGetTicketList() throws Exception {
 
 		final Ticket t = new Ticket();
 		t.setArriveStation("aaa");
 		t.setBeginStation("bbbb");
 		
-		List<Ticket> list = new ArrayList<Ticket>(){
+		final List<Ticket> list = new ArrayList<Ticket>() {
 			{
 			add(t);
 			}
 		};
-		model = new ExtendedModelMap();
 		context.checking(new Expectations() {
 
 			{
-				allowing(request).getContextPath();
-				will(returnValue("/customerDevice"));
-
-				allowing(request).getSession();
-				will(returnValue(session));
-
-				allowing(session).setAttribute(with(any(String.class)), with(any(Object.class)));
-				allowing(ticketSearchService).retrieveListOfTicketByStarAddrByEndAddrByStarDate(with(any(String.class)), with(any(String.class)), with(any(String.class)));
+				allowing(bindingResult).hasErrors();
+				will(returnValue(false));
+				allowing(mockTicketSearchService).retrieveListOfTicketByStarAddrByEndAddrByStarDate(with(any(String.class)), with(any(String.class)), with(any(String.class)));
+				will(returnValue(list));
 			}
 
 		});
-		
-		//list = c.getTicketDetailJson(t, model, "aaa", request);
+
+		Assert.assertEquals("searchResult", controller.getTicketList(new Ticket(), bindingResult, model));
 
 	}
 

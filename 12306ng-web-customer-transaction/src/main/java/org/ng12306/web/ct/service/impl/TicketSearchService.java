@@ -1,10 +1,3 @@
-/*
- * Copyright Notice ====================================================
- * This file contains proprietary information of Hewlett-Packard Co.
- * Copying or reproduction without prior written approval is prohibited.
- * Copyright (c) 2012 All rights reserved. =============================
- */
-
 package org.ng12306.web.ct.service.impl;
 
 import java.util.ArrayList;
@@ -12,9 +5,9 @@ import java.util.List;
 
 import org.ng12306.web.ct.entity.Ticket;
 import org.ng12306.web.ct.service.ITicketSearchService;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public class TicketSearchService implements ITicketSearchService {
 
 	@Override
