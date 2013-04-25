@@ -40,3 +40,45 @@ $.fn.extend({
 		}
 	}
 });
+jQuery.fn.customInput = function(){
+	$(this).each(function(i){	
+		if($(this).is('[type=checkbox],[type=radio]')){
+			var input = $(this);
+			var label = $('label[for='+input.attr('id')+']');
+			if ( input.attr('disabled') == 'disabled' || input.attr('disabled') == 'true') {
+				label.addClass('disabled');	
+			}
+			var inputType = (input.is('[type=checkbox]')) ? 'checkbox' : 'radio';
+			$('<div class="custom-'+ inputType +'"></div>').insertBefore(input).append(input, label);
+			var allInputs = $('input[name='+input.attr('name')+']');				
+			input.bind('updateState', function(){	
+				if (input.is(':checked')) {
+					if (input.is(':radio')) {				
+						allInputs.each(function(){
+							$('label[for='+$(this).attr('id')+']').removeClass('checked');
+						});		
+					};
+					label.addClass('checked');
+				}
+				else { label.removeClass('checked'); }
+										
+			}).trigger('updateState').click(function(){ 
+				$(this).trigger('updateState'); 
+			})
+		}
+	});
+};
+
+$(".select_box input").click(function(){
+		var thisinput=$(this);
+		var thisul=$(this).parent().find("ul");
+		if(thisul.css("display")=="none"){
+			if(thisul.height()>200){thisul.css({height:"200"+"px","overflow-y":"scroll" })};
+			thisul.fadeIn("100");
+			thisul.hover(function(){},function(){thisul.fadeOut("100");})
+			thisul.find("li").click(function(){thisinput.val($(this).text());thisul.fadeOut("100");}).hover(function(){$(this).addClass("hover");},function(){$(this).removeClass("hover");});
+			}
+		else{
+			thisul.fadeOut("fast");
+			}
+	})

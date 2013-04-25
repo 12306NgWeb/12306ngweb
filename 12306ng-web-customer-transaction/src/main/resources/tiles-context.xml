@@ -22,9 +22,12 @@
 			</list>
 		</property>
 	</bean>
-	<mvc:resources mapping="/**" location="/WEB-INF/" />    
+	<!-- <mvc:resources mapping="/**" location="/WEB-INF/" />   -->
+    <mvc:resources mapping="/js/**" location="/WEB-INF/jsp/js/"/>    
+    <mvc:resources mapping="/css/**" location="/WEB-INF/jsp/css/"/>    
+    <mvc:resources mapping="/images/**" location="/WEB-INF/jsp/images/"/> 	  
     <mvc:default-servlet-handler /> 	
     
 	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver" 
-    		p:prefix="/WEB-INF/" p:suffix=".jsp" p:order="1"/>	
+    		p:prefix="/WEB-INF/jsp/body/" p:suffix=".jsp" p:order="1"/>	
 </beans>

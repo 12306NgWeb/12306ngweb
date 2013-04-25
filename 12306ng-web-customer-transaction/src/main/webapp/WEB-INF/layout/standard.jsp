@@ -8,19 +8,29 @@
 <c:set var="url" value="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/ngweb" scope="page" />
 
       
-      
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>
 	<tiles:insertAttribute name="title" ignore="true" />
 </title>
 
-<script type="text/javascript" src="${url}/jsp/js/jquery-1.8.2.min.js"></script>
-<link rel="stylesheet" type="text/css" href="${url}/jsp/css/base.css" />
-<link rel="stylesheet" type="text/css" href="${url}/jsp/css/main.css" />
+<script type="text/javascript" src="<c:url value='/js/jquery-1.8.2.min.js'/>"></script>
+
+<link rel="stylesheet" type="text/css" href="<c:url value='/css/base.css'/>" />
+<link rel="stylesheet" type="text/css" href="<c:url value='/css/main.css'/>" />
 
 </head>
+
 <body>
+<script type="text/javascript">
+$(function() {
+	$(".headerlogin").mouseover(function(){
+			$("#myshow").show().mouseleave(function(){
+					$(this).hide();
+				});
+		})
+});
+</script>
 <div class="wrap">
 <div id="header"><tiles:insertAttribute name="header" /></div>
 <div id="body-content"><tiles:insertAttribute name="body" /></div>

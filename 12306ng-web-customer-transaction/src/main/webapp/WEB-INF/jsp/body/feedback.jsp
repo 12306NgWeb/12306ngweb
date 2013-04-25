@@ -17,7 +17,7 @@
             <a href="index.html">首页</a>
             <a href="search.html">查询</a>
             <a href="bookticket.html">购票</a>
-            <a href="">退票</a>
+            <a href="returnticket.html">退票</a>
             <a href="help.html">帮助</a>
             <a href="feedback.html">反馈</a>
         </span>
@@ -29,10 +29,10 @@
     <fieldset class="userinfors userlogin">
         <legend>意见反馈</legend>
         <ul>
-            <li><label><em>*</em>反馈标题：</label><input type="text" name="userName" class="inputname" placeholder="请输入您要反馈的标题" /></li>	
+            <li><label><em>*</em>反馈标题：</label><input type="text" name="userName" class="inputname" placeholder="请输入您要反馈的标题" /></li>    
             <li><label><em>*</em>联系方式：</label><input type="text" name="userName" class="inputname" placeholder="请输入您的联系方式，手机 / QQ / 邮箱 都可以" /></li>
             <li><label><em>*</em>反馈内容：</label><input type="text" name="userName" class="inputname" placeholder="请输入您要反馈的内容" /></li>
-            <li><label><em>*</em>上传附件：</label><input type="file" name="submit" class="inputname"  /></li>
+            <li><label><em>*</em>上传附件：</label><input type="file" name="submit" class="mt10"/></li>
         </ul>
     </fieldset>
     <p class="tcenter"><a href="feedbacksuccess.html"><input type="submit" name="submit" class="btnlogin mr20" value="提交" /></a><input type="submit" name="clear" class="btnreg" value="清空" /></p>

@@ -19,10 +19,10 @@
     <mvc:default-servlet-handler/>
 
     <!-- 定义JSP文件的位置 -->
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/views/"/>
+   <!--  <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/jsp/body/"/>
         <property name="suffix" value=".jsp"/>
-    </bean>
+    </bean> -->
 	<import resource="classpath*:/tiles-context.xml" />
 	
 </beans>

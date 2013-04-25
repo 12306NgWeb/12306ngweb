@@ -1,23 +1,35 @@
 @charset "utf-8";
 /* CSS Reset */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin: 0; padding: 0;}
-body{font-size:14px; background: #fff; font-family: "Microsoft Yahei", sans-serif; line-height: 20px; color: #333;}
-table{border-collapse: collapse; border-spacing: 0;}
-fieldset,img{border: none;}
-address,caption,cite,code,dfn,em,strong,th,var{font-style: normal; font-weight: normal;}
+body{font-size:14px; background: #fff; font-family:"Microsoft Yahei", Verdana, Geneva, sans-serif; line-height: 25px; color: #333;}
+table{border-collapse: collapse; border-spacing: 0; font-family:inherit;}
+fieldset,img{border: none; font-family:inherit;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style: normal; font-weight: normal; font-family:inherit;}
 ol,ul{list-style: none;}
 caption,th{text-align: left;}
-h1,h2,h3,h4,h5,h6{font-size: 100%; font-weight: normal;}
+h1,h2,h3,h4,h5,h6{font-size: 100%; font-weight: normal; font-family:inherit;}
 q:before,q:after{content: '';}
 abbr,acronym{border: 0; font-variant: normal;}
 sup{vertical-align: text-top;}
 sub{vertical-align: text-bottom;}
-input,textarea,select{ font-family: inherit; font-size: inherit;font-weight: inherit;}
-input,textarea,select{*font-size: 100%;}
-input[type=text]{ text-indent: 10px;}
+input{ font-family:inherit; font-size: 16px;}
+.ordercons input{ font-size: 14px;}
+input[type=text]{ text-indent: 5px;}
 input[type=submit]{ cursor: pointer;}
+legend{ font-size: 16px;}
+
+input[type=text]:focus { border: 1px solid #38e; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; outline:none; -webkit-box-shadow: #38e 0px 0px 5px;
+-moz-box-shadow: #38e 0px 0px 5px;
+box-shadow: #38e 0px 0px 5px;}
+#startAddress,#endAddress{ border: 1px solid #ddd; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; outline:none; background: #fefefe;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;}
+
+#inputerror{ border: 1px solid #f44; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; outline:none; background: #fee; }
 
 
+.inputerror{ border: 1px solid #f44; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; outline:none; background: #fee; }
 /*font size*/
 .f12{font-size: 12px;}
 .f13{font-size: 13px;}
@@ -43,6 +55,7 @@ input[type=submit]{ cursor: pointer;}
 .textcolor{color: #ccc;}
 .bordercolor{color: #ddd;}
 .bgcolor{color: #f0f0f0;}
+.lightgray{color: #999;}
 
 
 /*layout*/

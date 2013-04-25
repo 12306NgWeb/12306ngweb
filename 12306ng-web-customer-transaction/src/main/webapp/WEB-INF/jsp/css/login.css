@@ -1,0 +1,39 @@
+@charset "utf-8";
+/*register*/
+.ng-register{ margin: 75px auto 45px auto; padding: 10px 39px; width: 940px; line-height: 25px; border: 1px solid #ddd;}
+.ng-register h2{ margin: 5px auto; color: #38e; text-align: center;}
+.ng-register p{ text-indent: 2em;}
+.ng-register h3{ margin-top: 15px;}
+.goreg{ margin-bottom: 50px; width:230px; background: #38e; border: none; color: #fff; }
+
+.userinfors{ margin: 75px auto 15px auto; padding: 30px 39px; border: 1px solid #ddd;}
+.userinfors legend{ padding: 0 10px;}
+.inputname,.inputcode{ height:38px; line-height: 38px; border: 1px solid #ddd; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; vertical-align: middle;}
+.inputname{ width: 300px;}
+.userinfors ul{ margin: 0; padding: 0;}
+.userinfors ul li{ margin: 5px 0;}
+.userinfors ul li p{ padding-left: 110px; margin-top: 5px;}
+.userinfors em{margin: 0 5px; color: #f44;}
+.userinfors label{ display: inline-block; width: 100px; text-align: right; margin-right:10px;}
+
+.baseinfos{ width: 1000px;}
+.detailinfos{ margin-bottom: 35px; width: 1000px;}
+
+.reg-finish{ clear:both; padding: 50px; margin: 200px auto; width: 350px;}
+.reg-finish img{ float: left; margin-right: 10px;}
+.reg-finish h1{ line-height: 30px; font-size: 30px;}
+.reg-finish p{ line-height: 30px}
+.reg-finish a{ margin: 0 5px; text-decoration: none; color: #38e;}
+
+/*login*/
+.userlogin{ width: 1000px;}
+.btnlogin, .btnreg,.btncode, .btnhelp{ height: 38px; line-height: 38px; border: 1px solid #ddd; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; vertical-align: middle;}
+.btnlogin{ width: 150px; margin-bottom: 50px; background: #38e; color: #fff; }
+.btnreg{ width: 150px; margin-bottom: 50px; background: #f0f0f0; }
+
+/*find password*/
+.findpwd{ width: 1000px;}
+.findpwd p{ padding-bottom: 20px;}
+.findpwd img{ margin: 5px 15px;}
+.btncode{ width: 150px;}
+.btnhelp{ width: 100px}
