@@ -17,7 +17,7 @@
             <a href="index.html">首页</a>
             <a href="search.html">查询</a>
             <a href="bookticket.html">购票</a>
-            <a href="">退票</a>
+            <a href="returnticket.html">退票</a>
             <a href="help.html">帮助</a>
             <a href="feedback.html">反馈</a>
         </span>
@@ -53,7 +53,7 @@
 					<input type="submit" name="add" class="btnadd mr10" value="查询" />
 					<input type="submit" name="delete" class="btndelete" value="重置" />					
 					<input type="submit" name="delete" class="btndelete mr10 fright" value="删除" />
-					<input type="submit" name="add" class="btnadd mr10 fright" value="添加" />
+					<a href="addcontact.html"><input type="submit" name="add" class="btnadd mr10 fright" value="添加" /></a>
 				</div>
 				<table border="0" class="contactinfos">
 					<tr class="tableheader">
@@ -93,7 +93,7 @@
 						<td class="cdo"><a href="" class="blue">[编辑]</a></td>
 					</tr>
 				</table>
-				<p class="pt20 tcenter"><input type="submit" name="add" class="btnadd mr20" value="添加" /><input type="submit" name="delete" class="btndelete mr20" value="删除" /></p>
+				<p class="pt20 tcenter"><a href="addcontact.html"><input type="submit" name="add" class="btnadd mr20" value="添加" /></a><input type="submit" name="delete" class="btndelete mr20" value="删除" /></p>
 			</div>
 		</div>
 	</div>

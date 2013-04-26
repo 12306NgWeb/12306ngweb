@@ -1,4 +1,4 @@
-<!-- <!doctype html>
+<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -10,42 +10,31 @@
 
 <body>
 <div class="wrap">
-    header start
+    <!--header start-->
     <div class="header">
         <img src="../images/headlogo.png" alt="header-logo" width="140" height="50" />
         <span class="headermenu fleft">
             <a href="index.html">首页</a>
             <a href="search.html">查询</a>
             <a href="bookticket.html">购票</a>
-            <a href="">退票</a>
+            <a href="returnticket.html">退票</a>
             <a href="help.html">帮助</a>
             <a href="feedback.html">反馈</a>
         </span>
         <span class="headerlogin fright"><a href="register.html">注册</a><a href="login.html">登录</a></span>
     </div>
-    header end -->
-<%@ page language="java" contentType="text/html; charset=UTF-8"   pageEncoding="UTF-8"%>    
-<%@ include file="/WEB-INF/layout/include.jsp"%> 
-<c:set var="url" value="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/ngweb" scope="page" />
-<script src="<c:url value='/js/common.js'/>"></script>
+    <!--header end-->
+    
     <!--search start-->
 	<div class="ticketsearch">
     	<div class="searchdates">
-            <input type="text" placeholder="出发地" name="startAdd" class="inputtxt" />
-            <input type="text" placeholder="目的地" name="endAdd" class="inputtxt" />
-            <input type="text" placeholder="出发日期" name="startDate" class="inputdate" />
+            <input type="text" placeholder="出发地" name="startAdd" class="inputtxt" readonly id="startAddress"/>
+            <input type="text" placeholder="目的地" name="endAdd" class="inputtxt" readonly id="endAddress" />
+            <input type="text" placeholder="出发日期" name="startDate" class="inputdate"  onClick="WdatePicker()"/>
             <input type="submit" value="查询" name="search" class="btnsearch f16" />
         </div> 
         <div class="searchdates">
             <ul>
-            	<li><select>
-                    <option>G7428(杭州→上海虹桥)</option>
-                    <option>G7428(杭州→上海虹桥)</option>
-                    <option>G7428(杭州→上海虹桥)</option>
-                    <option>G7428(杭州→上海虹桥)</option>
-                    <option>G7428(杭州→上海虹桥)</option>
-                    <option>G7428(杭州→上海虹桥)</option>
-                </select></li>
             	<li><input type="radio" name="traintypes" class="radiotype" checked="checked" id="t-all"/><label for="t-all">全部</label></li>
                 <li><input type="radio" name="traintypes" class="radiotype" id="t-start"/><label for="t-start">始发</label></li>
                 <li><input type="radio" name="traintypes" class="radiotype" id="t-end"/><label for="t-end">终到</label></li>
@@ -61,7 +50,11 @@
                 <li><input type="checkbox" name="traintypes" class="checkboxtype" id="t-K2" /><label for="t-K2">普客</label></li>
                 <li><input type="checkbox" name="traintypes" class="checkboxtype" id="t-L" /><label for="t-L">临客(L,A)</label></li>
             </ul>
+            <p class="pb5 red">改签车票时，不能更改出发地、目的地、票种和身份信息。</p>
         </div> 
+        
+        <p class="pb5">出发日期：<span class="blue mr10">2013-01-01</span><span class="blue mr10">杭州→上海虹桥</span>共<span class="blue">（9）</span>次列车</p>
+        
         <table border="1" bordercolor="#ddd" cellspacing="0" cellpadding="0" style="border-collapse:collapse" class="alltrains">
             <tr>
                 <th rowspan="2" width="15%">车次</th>
@@ -84,32 +77,10 @@
                 <th class="voteremaining">硬座</th>
                 <th class="voteremaining">无座</th>
             </tr>
-    <c:forEach items="${ticketlist}" var="ticket">        
             <tr>
-                <td>${ticket.ticketInfo}</td>
-                <td>${ticket.beginStation}</td>
-                <td>${ticket.arriveStation}</td>
-                <td>50：00</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>有</td>
-                <td><a href="${url}/book/${ticket.id}" class="blue">[预定]</a></td>
-            </tr>
-           </c:forEach> 
-            <!-- <tr>
-            	<td>1</td>
                 <td>G7428(杭州→上海虹桥)</td>
-                <td>杭州</td>
-                <td>上海</td>
-                <td>17：29</td>
-                <td>18：39</td>
+                <td>杭州（17：29）</td>
+                <td>上海虹桥（18：39）</td>
                 <td>50：00</td>
                 <td>1</td>
                 <td>1</td>
@@ -121,15 +92,12 @@
                 <td>-</td>
                 <td>-</td>
                 <td>有</td>
-                <td>快速</td>
+                <td><a href="changeticket.html" class="blue">[改签]</a></td>
             </tr>
             <tr>
-            	<td>1</td>
                 <td>G7428(杭州→上海虹桥)</td>
-                <td>杭州</td>
-                <td>上海</td>
-                <td>17：29</td>
-                <td>18：39</td>
+                <td>杭州（17：29）</td>
+                <td>上海虹桥（18：39）</td>
                 <td>50：00</td>
                 <td>1</td>
                 <td>1</td>
@@ -141,15 +109,12 @@
                 <td>-</td>
                 <td>-</td>
                 <td>有</td>
-                <td>快速</td>
-            </tr>
+                <td><a href="changeticket.html" class="blue">[改签]</a></td>
+            </tr>  
             <tr>
-            	<td>1</td>
                 <td>G7428(杭州→上海虹桥)</td>
-                <td>杭州</td>
-                <td>上海</td>
-                <td>17：29</td>
-                <td>18：39</td>
+                <td>杭州（17：29）</td>
+                <td>上海虹桥（18：39）</td>
                 <td>50：00</td>
                 <td>1</td>
                 <td>1</td>
@@ -161,15 +126,12 @@
                 <td>-</td>
                 <td>-</td>
                 <td>有</td>
-                <td>快速</td>
-            </tr>
+                <td><a href="changeticket.html" class="blue">[改签]</a></td>
+            </tr>  
             <tr>
-            	<td>1</td>
                 <td>G7428(杭州→上海虹桥)</td>
-                <td>杭州</td>
-                <td>上海</td>
-                <td>17：29</td>
-                <td>18：39</td>
+                <td>杭州（17：29）</td>
+                <td>上海虹桥（18：39）</td>
                 <td>50：00</td>
                 <td>1</td>
                 <td>1</td>
@@ -181,15 +143,12 @@
                 <td>-</td>
                 <td>-</td>
                 <td>有</td>
-                <td>快速</td>
-            </tr>
+                <td><a href="changeticket.html" class="blue">[改签]</a></td>
+            </tr>  
             <tr>
-            	<td>1</td>
                 <td>G7428(杭州→上海虹桥)</td>
-                <td>杭州</td>
-                <td>上海</td>
-                <td>17：29</td>
-                <td>18：39</td>
+                <td>杭州（17：29）</td>
+                <td>上海虹桥（18：39）</td>
                 <td>50：00</td>
                 <td>1</td>
                 <td>1</td>
@@ -201,15 +160,12 @@
                 <td>-</td>
                 <td>-</td>
                 <td>有</td>
-                <td>快速</td>
-            </tr>
+                <td><a href="changeticket.html" class="blue">[改签]</a></td>
+            </tr>  
             <tr>
-            	<td>1</td>
                 <td>G7428(杭州→上海虹桥)</td>
-                <td>杭州</td>
-                <td>上海</td>
-                <td>17：29</td>
-                <td>18：39</td>
+                <td>杭州（17：29）</td>
+                <td>上海虹桥（18：39）</td>
                 <td>50：00</td>
                 <td>1</td>
                 <td>1</td>
@@ -221,15 +177,12 @@
                 <td>-</td>
                 <td>-</td>
                 <td>有</td>
-                <td>快速</td>
-            </tr>
+                <td><a href="changeticket.html" class="blue">[改签]</a></td>
+            </tr>  
             <tr>
-            	<td>1</td>
                 <td>G7428(杭州→上海虹桥)</td>
-                <td>杭州</td>
-                <td>上海</td>
-                <td>17：29</td>
-                <td>18：39</td>
+                <td>杭州（17：29）</td>
+                <td>上海虹桥（18：39）</td>
                 <td>50：00</td>
                 <td>1</td>
                 <td>1</td>
@@ -241,15 +194,12 @@
                 <td>-</td>
                 <td>-</td>
                 <td>有</td>
-                <td>快速</td>
-            </tr>
+                <td><a href="changeticket.html" class="blue">[改签]</a></td>
+            </tr>  
             <tr>
-            	<td>1</td>
                 <td>G7428(杭州→上海虹桥)</td>
-                <td>杭州</td>
-                <td>上海</td>
-                <td>17：29</td>
-                <td>18：39</td>
+                <td>杭州（17：29）</td>
+                <td>上海虹桥（18：39）</td>
                 <td>50：00</td>
                 <td>1</td>
                 <td>1</td>
@@ -261,15 +211,12 @@
                 <td>-</td>
                 <td>-</td>
                 <td>有</td>
-                <td>快速</td>
-            </tr>
+                <td><a href="changeticket.html" class="blue">[改签]</a></td>
+            </tr>  
             <tr>
-            	<td>1</td>
                 <td>G7428(杭州→上海虹桥)</td>
-                <td>杭州</td>
-                <td>上海</td>
-                <td>17：29</td>
-                <td>18：39</td>
+                <td>杭州（17：29）</td>
+                <td>上海虹桥（18：39）</td>
                 <td>50：00</td>
                 <td>1</td>
                 <td>1</td>
@@ -281,17 +228,17 @@
                 <td>-</td>
                 <td>-</td>
                 <td>有</td>
-                <td>快速</td>
-            </tr> -->
+                <td><a href="changeticket.html" class="blue">[改签]</a></td>
+            </tr>            
         </table>
-        <p class="lightgray pt20">*余票每十分钟更新一次，“-”表示无此席别，“0”表示已售完</p>
+        <p class="lightgray pt20">*余票每十分钟更新一次，“有”表示票源充足，“-”表示无此席别，“0”表示已售完</p>
         <p class="lightgray pt5" >*鼠标移到任何信息，即可放大现实</p>
         <p class="lightgray pt5">*本功能及查询结果仅作为参考，准确信息以车站公告为准</p>
     </div>
     <!--search end-->
     
     <!--bottom start-->
-<!--     <div class="bottom">
+    <div class="bottom">
         <img src="../images/bottomlogo.png" alt="12306ng-Logo" width="110" height="40" />
         <span>
             <a href="">新手上路</a><em>|</em>
@@ -301,7 +248,7 @@
             <a href="">团队成员</a><em>|</em>
             <a href="">联系我们</a>
         </span>
-    </div> -->
+    </div>
     <!--bottom end-->
 </div>
 
@@ -327,17 +274,18 @@
 	<p class="tcenter mt20"><a href="confirmticket.html"><input type="submit" name="submit" class="btnsubmit mr20" /></a><input type="submit" name="submit" class="btncancel" /></p>
 </div>
 <!---->
+<script src="../js/DatePicker/WdatePicker.js" ></script>
+<script src="../js/common.js"></script>
 <script>
   function infoshow() {
 	  $("#submitconfirm").fadeIn();
-	  $("#txtemail").focus();
 	  $("#bgcolor").show();
   }
   function infoIndden() {
 	  $("#submitconfirm").fadeOut();
 	  $("#bgcolor").hide();
   }
-   $(".checkboxtype, .radiotype").customInput();
+  $(".checkboxtype, .radiotype").customInput();
 </script>
-<!-- </body>
-</html> -->
+</body>
+</html>

@@ -1,0 +1,44 @@
+@charset "utf-8";
+/*my order*/
+.myorder{ clear: both; overflow: hidden; margin: 75px auto 45px auto; padding: 0; width:1000px; border: 1px solid #ddd;}
+.position{ clear:both; height:38px; line-height:38px; text-indent:50px; background:url(../images/line.png) repeat-x; border-bottom: 1px solid #ddd;}
+.orderleft{ width: 160px; min-height:900px; background: #f5f5f5; line-height: 40px; border-right: 1px solid #ddd;}
+.orderleft ul{ margin: 0; padding: 0;}
+.orderleft ul li{ height: 40px; width: 100%; text-align: center;}
+.orderleft ul li a{ text-decoration: none; color: #666;}
+.orderright{ padding:20px; width: 790px;}
+.infosurrent{ background: #fff; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; border-right:1px solid #fff; color: #38e;}
+.orderleft .infosurrent a{ color: #38e;}
+.ordercontact{ padding: 10px 0;}
+
+.contactsearch{ margin:0 auto 20px auto; padding:0 0 20px 0; border-bottom: 1px dashed #ddd;}
+.contactinfos{ overflow:hidden; width: 100%; border-bottom: 1px solid #ddd;}
+.contactinfos .tableheader, .contactinfos .tableheader:hover{ height:32px; line-height: 34px; background: #eef5ff; border-top: 1px solid #def; border-bottom: 1px solid #def;}
+.contactinfos td{ height: 60px; line-height: 60px;}
+.contactinfos tr:hover{ background: #f0f0f0;}
+.cname, .csex, .ctraveler, .cdo{ width: 10%; text-align: center;}
+.ccard, .cphone { width: 15%; text-align: center;}
+.cid{ width: 30%; text-align: center;}
+.cdo a{ text-decoration: none;}
+
+.btnadd, .btndelete{ width: 90px; height: 30px; line-height: 30px; border: none; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; vertical-align: middle;}
+.btnadd{ background: #38e; color: #fff; }
+.btndelete{ background: #fafafa; border: 1px solid #ddd;}
+.inputsearch, .inputpwd{ height: 28px; line-height: 28px; border: 1px solid #ddd; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; vertical-align: middle;}
+.inputsearch{ width: 155px; }
+
+/*my infos*/
+.myinfos{}
+.myinfos h2{ margin-bottom: 5px; padding:3px 0; line-height:30px; border-bottom: 1px solid #eee;}
+.myinfos ul{ padding:5px 0; margin: 0 auto;}
+.myinfos ul li{ margin: 10px 0;}
+.myinfos ul li label{ display: inline-block; width: 200px; text-align: right; margin-right: 10px; color: #666;}
+.inputpwd{ width: 240px;}
+.btnmodify{ padding-top:30px; margin: 20px auto; border-top: 1px dashed #ddd;}
+.myinfos select{ width: 150px;}
+.modifytxt{ width: 450px; height:28px; line-height: 28px; border: 1px solid #ddd;; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; vertical-align: middle;}
+.textname{ width: 250px; height:28px; line-height: 28px; border: 1px solid #ddd;; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; vertical-align: middle;}
+
+/*add contact*/
+.radiosex{ width:auto; margin:0 5px;}
+.topline{ border-top: 1px dashed #ddd;}

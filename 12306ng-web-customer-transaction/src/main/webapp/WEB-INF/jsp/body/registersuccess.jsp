@@ -17,7 +17,7 @@
             <a href="index.html">首页</a>
             <a href="search.html">查询</a>
             <a href="bookticket.html">购票</a>
-            <a href="">退票</a>
+            <a href="returnticket.html">退票</a>
             <a href="help.html">帮助</a>
             <a href="feedback.html">反馈</a>
         </span>
@@ -29,7 +29,7 @@
     <div class="ng-wrap reg-finish">
         <img src="../images/blueok.png" alt="true" width="56" height="56" />
         <h1 class="blue">恭喜您，注册成功</h1>
-        <p>5秒后跳转到<a href="">购票</a>或者立刻返回<a href="index.html">首页</a></p>
+        <p>5秒后跳转到<a href="bookticket.html">购票</a>或者立刻返回<a href="index.html">首页</a></p>
     </div>
     <!--user information for register end-->
     

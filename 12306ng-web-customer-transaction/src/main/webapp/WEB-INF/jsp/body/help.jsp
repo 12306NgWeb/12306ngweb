@@ -1,4 +1,7 @@
-<!doctype html>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<!-- <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -6,11 +9,11 @@
 <script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
 <link rel="stylesheet" type="text/css" href="../css/base.css" />
 <link rel="stylesheet" type="text/css" href="../css/main.css" />
-</head>
+</head> 
 
 <body>
 <div class="wrap">
-    <!--header start-->
+    header start
     <div class="header">
         <img src="../images/headlogo.png" alt="header-logo" width="140" height="50" />
         <span class="headermenu fleft">
@@ -23,7 +26,7 @@
         </span>
         <span class="headerlogin fright"><a href="register.html">注册</a><a href="login.html">登录</a></span>
     </div>
-    <!--header end-->
+    header end -->
     
     <!--help information start-->
 
@@ -57,7 +60,7 @@
 
     <!--help information end-->
     
-    <!--bottom start-->
+  <!-- bottom start
     <div class="bottom">
         <img src="../images/bottomlogo.png" alt="12306ng-Logo" width="110" height="40" />
         <span>
@@ -68,8 +71,8 @@
             <a href="">团队成员</a><em>|</em>
             <a href="">联系我们</a>
         </span>
-    </div>
+    </div> -->
     <!--bottom end-->
 </div>
-</body>
-</html>
+<!-- </body>
+</html> -->

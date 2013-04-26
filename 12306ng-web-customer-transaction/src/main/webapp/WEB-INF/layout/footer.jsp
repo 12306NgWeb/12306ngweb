@@ -3,7 +3,7 @@
 <c:set var="url" value="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/ngweb" scope="page" />
 <!--bottom start-->
     <div class="bottom">
-        <img src="${url}/jsp/images/bottomlogo.png" alt="12306ng-Logo" width="110" height="40" />
+        <img src=" <c:url value='/images/bottomlogo.png'/>" alt="12306ng-Logo" width="110" height="40" />
         <span>
             <a href="">新手上路</a><em>|</em>
             <a href="">常见问题</a><em>|</em>

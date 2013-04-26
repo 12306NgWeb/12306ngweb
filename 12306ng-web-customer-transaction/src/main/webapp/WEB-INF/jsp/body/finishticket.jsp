@@ -17,7 +17,7 @@
             <a href="index.html">首页</a>
             <a href="search.html">查询</a>
             <a href="bookticket.html">购票</a>
-            <a href="">退票</a>
+            <a href="returnticket.html">退票</a>
             <a href="help.html">帮助</a>
             <a href="feedback.html">反馈</a>
         </span>
@@ -48,24 +48,26 @@
 				<li>3. 请预留足够的换票时间，以免窗口排队人数较多，耽误您检票乘车。</li>
 			</ol>
 		</div>
-		<table border="0" class="travelinfo">
-			<tr class="tableheader">
-				<th class="torder">车次</th>
-				<th class="tdate">出发时间</th>
-				<th class="tstartadd">出发站</th>
-				<th class="tendadd">目的地</th>
-				<th class="ttime">历时</th>
-				<th class="tdo"></th>
-			</tr>
-			<tr>
-				<td class="torder">T1234</td>
-				<td class="tdate">2013年3月3日</td>
-				<td class="tstartadd">北京西（8：00开）</td>
-				<td class="tendadd">上海虹桥（12：55到）</td>
-				<td class="ttime">4小时55分</td>
-				<td class="tdo"></td>
-			</tr>
-		</table>
+        <div class="travelcontact">
+            <table border="0" class="travelinfo">
+                <tr class="tableheader">
+                    <th class="torder">车次</th>
+                    <th class="tdate">出发时间</th>
+                    <th class="tstartadd">出发站</th>
+                    <th class="tendadd">目的地</th>
+                    <th class="ttime">历时</th>
+                    <th class="tdo"></th>
+                </tr>
+                <tr>
+                    <td class="torder">T1234</td>
+                    <td class="tdate">2013年3月3日</td>
+                    <td class="tstartadd">北京西（8：00开）</td>
+                    <td class="tendadd">上海虹桥（12：55到）</td>
+                    <td class="ttime">4小时55分</td>
+                    <td class="tdo"></td>
+                </tr>
+            </table>
+        </div>
 		<div class="travelcontact">
 			<table border="0" class="travelinfo" >
 				<tr class="tableheader">

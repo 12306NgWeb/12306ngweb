@@ -17,7 +17,7 @@
             <a href="index.html">首页</a>
             <a href="search.html">查询</a>
             <a href="bookticket.html">购票</a>
-            <a href="">退票</a>
+            <a href="returnticket.html">退票</a>
             <a href="help.html">帮助</a>
             <a href="feedback.html">反馈</a>
         </span>
@@ -49,37 +49,47 @@
 		<div class="orderright fright myinfos">
 			<h2>基本信息</h2>
 			<ul>
-				<li><label>用户名：</label><input type="text" name="username" class="modifytxt" /></li>
+				<li><label>用户名：</label><input type="text" name="username" class="textname" /></li>
 				<li><label>密码提示问题：</label><input type="text" name="username" class="modifytxt" /></li>
 			</ul>
 			<h2>详细信息</h2>
 			<ul>
-				<li><label>姓名：</label><input type="text" name="username" class="modifytxt" /></li>
-				<li><label>性别：</label><input type="text" name="username" class="modifytxt" /></li>
-				<li><label>出生日期：</label><input type="text" name="username" class="modifytxt" /></li>
-				<li><label>国家或地区：</label><input type="text" name="username" class="modifytxt" /></li>
+				<li><label>姓名：</label><input type="text" name="username" class="textname" /></li>
+				<li><label>性别：</label><input type="text" name="username" class="textname" /></li>
+				<li><label>出生日期：</label><input type="text" name="username" class="textname" /></li>
+				<li><label>国家或地区：</label><select>
+                	<option>中国CHINA</option>
+                    <option>美国US</option>
+                    <option>英国UK</option>
+                    <option>法国FRANCE</option>
+                    <option>印度INDIA</option>
+                    <option>巴西BRAZIL</option>
+                    <option>日本JAPAN</option>
+                    <option>德国GERMARY</option>
+                </select></li>
 				<li><label>证件类型：</label><select>
                 	<option>二代身份证</option>
-                    <option>军官证</option>
-                    <option>学生证</option>
+                    <option>港澳通行证</option>
+                    <option>台湾通行证</option>
                     <option>护照</option>
                 </select></li>
-				<li><label>证件号码：</label><input type="text" name="username" class="modifytxt" /></li>
+				<li><label>证件号码：</label><input type="text" name="username" class="textname" /></li>
 			</ul>
 			<h2>联系方式</h2>
 			<ul>
-				<li><label>手机号：</label><input type="text" name="username" class="modifytxt" /></li>
-				<li><label>固定电话：</label><input type="text" name="username" class="modifytxt" /></li>
-				<li><label>电子邮件：</label><input type="text" name="username" class="modifytxt" /></li>
+				<li><label>手机号：</label><input type="text" name="username" class="textname" /></li>
+				<li><label>固定电话：</label><input type="text" name="username" class="textname" /></li>
+				<li><label>电子邮件：</label><input type="text" name="username" class="textname" /></li>
 				<li><label>地址：</label><input type="text" name="username" class="modifytxt" /></li>
-				<li><label>邮编：</label><input type="text" name="username" class="modifytxt" /></li>
+				<li><label>邮编：</label><input type="text" name="username" class="textname" /></li>
 			</ul>
 			<h2>附加信息</h2>
 			<ul>
-				<li><label>旅客类型：</label></label><select>
+				<li><label>旅客类型：</label><select>
                 	<option>成人</option>
-                    <option>军人</option>
                     <option>学生</option>
+                    <option>儿童</option>
+                    <option>伤残军人</option>
                 </select></li>
 			</ul>
 			<p class="pt10 tcenter"><input type="submit" name="add" class="btnadd mr10" value="修改" /></p>

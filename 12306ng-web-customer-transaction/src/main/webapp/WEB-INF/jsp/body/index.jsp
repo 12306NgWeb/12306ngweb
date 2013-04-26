@@ -10,19 +10,14 @@
 
 <body>-->
 <%@ page language="java" contentType="text/html; charset=UTF-8"   pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ include file="/WEB-INF/layout/include.jsp"%>
 <c:set var="url" value="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/ngweb" scope="page" />
-<script type="text/javascript" src="<%=request.getContextPath()%>/jsp/js/jquery-1.8.2.min.js"></script>
-<script type="text/javascript" src="<%=request.getContextPath()%>/jsp/js/jquery-ui-1.10.2.custom.js"></script>
-<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/jsp/css/jquery-ui-1.10.2.custom.css" />
+<script type="text/javascript" src="<c:url value='/js/jquery-ui-1.10.2.custom.js'/>"></script>
+<link rel="stylesheet" type="text/css" href="<c:url value='/css/jquery-ui-1.10.2.custom.css'/>" />
 
-<script src="${url}/jsp/validation/js/languages/jquery.validationEngine-zh_CN.js" type="text/javascript" charset="utf-8"></script>
-<script src="${url}/jsp/validation/js/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
-<link rel="stylesheet" href="${url}/jsp/validation/css/validationEngine.jquery.css" type="text/css"/>
+<script src="<c:url value='/js/jquery.validationEngine-zh_CN.js'/>" type="text/javascript" charset="utf-8"></script>
+<script src="<c:url value='/js/jquery.validationEngine.js'/>" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="<c:url value='/css/validationEngine.jquery.css'/>" type="text/css"/>
 
 <script type="text/javascript">
 		$(document).ready(function(){
@@ -46,15 +41,34 @@
     <div class="ng-menu">
     	<span>查询</span>
         <span class="blue"><a href="bookticket.html">购票</a></span>
-        <span class="blue"><a href="">退票</a></span>
+        <span class="blue"><a href="returnticket.html">退票</a></span>
         <span class="blue"><a href="help.html">帮助</a></span>
         <span class="blue"><a href="feedback.html">反馈</a></span>
         <span>|</span>
-        <span class="red"><a href="register.html">注册</a></span>
-        <span class="red"><a href="login.html">登录</a></span>
+        
+        <c:choose>
+		   <c:when test="${loginUserProfile.userName == 'Anonymous'}"> 		      		      
+		             <span class="red"><a href="register.html">注册</a></span>
+        			<span class="red"><a href="login.html">登录</a></span>
+		   </c:when>
+		   <c:otherwise> 
+		 		<span class="headerlogin fright"><a href="">我的12306</a></span>
+			        <div id="myshow" style="display: none;">
+			        	<ul>
+			            	<li><a href="bookticket.html">车票预定</a></li>
+			                <li><a href="order.html">我的订单</a></li>
+			                <li><a href="myinfos.html">个人信息</a></li>
+			                <li><a href="index.html">登出</a></li>
+			            </ul>
+			        </div>
+		   </c:otherwise>
+
+		</c:choose>        
+        
+        
     </div>
     
-    <form id = "ticketSearch"  action = "ticketlist" commandName="ticket" method = "post" >
+    <form id = "ticketSearch"  action = "ticketlist" method = "post">
     <div class="ng-indexSearch">
     	<input type="text" placeholder="出发地" name=beginStation class="inputtxt validate[required] text-input" value=""/> 
     	<%-- <form:input path = "beginStation" id = "beginStation" placeholder= "StartAddress" class="inputtxt"  /> --%>

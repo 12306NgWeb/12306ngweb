@@ -3,9 +3,11 @@ package org.ng12306.web.ct.controller;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
 import org.ng12306.web.ct.entity.Ticket;
+import org.ng12306.web.ct.entity.User;
 import org.ng12306.web.ct.service.ITicketSearchService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,7 +22,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/home")
 @SessionAttributes("ticketAttrSession")
 public class HomeController {
 
@@ -85,11 +87,32 @@ public class HomeController {
 
 		return "searchResult";
 	}
-	/*@RequestMapping(value = "/ticketresult")
-	public String showSearchResult() {
+
+	@RequestMapping(value = "/login" ,method = RequestMethod.POST)
+	public String loginApp(@ModelAttribute User user, Model model, HttpServletRequest request) {
+		if (user.getUserName().equals("Michael") && user.getPassword().equals("123") && user.getAssociatedTicketId() != null) {
+
+			request.getSession().setAttribute("loginUserProfile", user);
+			model.addAttribute("user", user);
+			return "bookTicket";
+
+		} else if (user.getUserName() == "Michael" && user.getPassword() == "123") {
+
+			request.getSession().setAttribute("loginUserProfile", user);
+			model.addAttribute("user", user);
+			return "searchResult";
+
+		} else {
+
+			return "login";
+		}
+
+	}
+
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public String showLogin() {
 
 
-		return "searchResult";
-	}*/
-
+		return "login";
+	}
 }

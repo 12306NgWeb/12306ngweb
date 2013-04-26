@@ -16,5 +16,9 @@
        <definition name="searchResult" extends="standardLayout"> 
 	       <put-attribute name="title" value="ngweb index" />
 	       <put-attribute name="body" value="/WEB-INF/jsp/body/search.jsp"/>
-       </definition>              
+       </definition>  
+       <definition name="bookTicket" extends="standardLayout"> 
+	       <put-attribute name="title" value="ngweb index" />
+	       <put-attribute name="body" value="/WEB-INF/jsp/body/bookticket.jsp"/>
+       </definition>                     
 </tiles-definitions>
