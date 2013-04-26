@@ -45,13 +45,13 @@
 	<div class="ng-logo"></div>
     <div class="ng-menu">
     	<span>查询</span>
-        <span class="blue"><a href="bookticket.html">购票</a></span>
-        <span class="blue"><a href="">退票</a></span>
-        <span class="blue"><a href="help.html">帮助</a></span>
-        <span class="blue"><a href="feedback.html">反馈</a></span>
+        <span class="blue"><a href="${url }/bookticket">购票</a></span>
+        <span class="blue"><a href="${url }/returnticket">退票</a></span>
+        <span class="blue"><a href="${url }/help">帮助</a></span>
+        <span class="blue"><a href="${url }/feedback">反馈</a></span>
         <span>|</span>
-        <span class="red"><a href="register.html">注册</a></span>
-        <span class="red"><a href="login.html">登录</a></span>
+        <span class="red"><a href="${url }/register">注册</a></span>
+        <span class="red"><a href="${url }login">登录</a></span>
     </div>
     
     <form id = "ticketSearch"  action = "ticketlist" commandName="ticket" method = "post" >

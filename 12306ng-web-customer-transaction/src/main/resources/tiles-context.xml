@@ -19,6 +19,7 @@
 				<value>/WEB-INF/layout/standard-tiles.xml</value>
 				<!--  <value>/WEB-INF/exceptions/error-tiles.xml</value>-->
 				<value>/WEB-INF/tiles/login-tiles.xml</value>
+				<value>/WEB-INF/tiles/showpage-tiles.xml</value>
 			</list>
 		</property>
 	</bean>
@@ -26,5 +27,5 @@
     <mvc:default-servlet-handler /> 	
     
 	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver" 
-    		p:prefix="/WEB-INF/" p:suffix=".jsp" p:order="1"/>	
+    		p:prefix="/WEB-INF/jsp/body/" p:suffix=".jsp" p:order="1"/>	
 </beans>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+ 
+<tiles-definitions>
+	<!-- 调转到查询页面  -->
+    <definition name="search" extends="standardLayout"> 
+		<put-attribute name="title" value="ngweb search" />
+	    <put-attribute name="body" value="/WEB-INF/jsp/body/search.jsp"/>
+    </definition>
+	<!-- 跳转到购票页面 -->
+	<definition name="bookTicket" extends="standardLayout">
+		<put-attribute name="title" value="ngweb bookTicket" />
+		<put-attribute name="body" value="/WEB-INF/jsp/body/bookticket.jsp" />
+	</definition>
+	<!-- 跳转到退票页面 -->
+	<definition name="returnticket" extends="standardLayout">
+		<put-attribute name="title" value="ngweb returnticket" />
+		<put-attribute name="body" value="/WEB-INF/jsp/body/returnticket.jsp" />
+	</definition>
+	<!-- 跳转到帮助页面  -->
+    <definition name="help" extends="standardLayout"> 
+	    <put-attribute name="title" value="ngweb help" />
+		<put-attribute name="body" value="/WEB-INF/jsp/body/help.jsp" />
+    </definition>
+	<!-- 跳转到反馈页面 -->
+	<definition name="feedback" extends="standardLayout">
+		<put-attribute name="title" value="ngweb feedback" />
+		<put-attribute name="body" value="/WEB-INF/jsp/body/feedback.jsp" />
+	</definition>
+	<!-- 跳转到注册页面 -->
+	<definition name="register" extends="standardLayout">
+		<put-attribute name="title" value="ngweb register" />
+		<put-attribute name="body" value="/WEB-INF/jsp/body/register.jsp" />
+	</definition>	
+		
+</tiles-definitions>
