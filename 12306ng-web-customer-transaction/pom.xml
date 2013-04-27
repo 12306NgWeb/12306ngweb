@@ -37,6 +37,7 @@
 		<powermock.version>1.4.12</powermock.version>
 		<easymock.version>3.0</easymock.version>
 		<jmock.version>2.5.1</jmock.version>
+		<logback.version>1.0.1</logback.version>
 	</properties>
 
 	<dependencies>
@@ -68,7 +69,17 @@
 			<version>${slf4j.version}</version>
 			<scope>runtime</scope>
 		</dependency>
-		
+		<!--logback config  -->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-core</artifactId>
+			<version>${logback.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>${logback.version}</version>
+		</dependency>		
 		<!-- java.util.logging 实际调用slf4j -->
 		<dependency>
 			<groupId>org.slf4j</groupId>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="ehcache.xsd" updateCheck="true"
+	monitoring="autodetect" dynamicConfig="true">
+	<diskStore path="${NGWEB_HOME}/data/cache" />
+	<defaultCache eternal="true" maxElementsInMemory="50"
+		memoryStoreEvictionPolicy="LFU" />
+	<cache name="ticketSearchCache" eternal="false"
+		timeToLiveSeconds="600" maxElementsInMemory="5000"
+		memoryStoreEvictionPolicy="LRU" statistics="true" overflowToDisk="true"
+		maxElementsOnDisk="100000" />
+		
+	<cache name="userSearchCache" eternal="false"
+		timeToLiveSeconds="600" maxElementsInMemory="5000"
+		memoryStoreEvictionPolicy="LRU" statistics="true" overflowToDisk="true"
+		maxElementsOnDisk="100000" />
+	
+	<cache name="initializationCache" eternal="false"
+		timeToLiveSeconds="600" maxElementsInMemory="5000"
+		memoryStoreEvictionPolicy="LRU" statistics="true" overflowToDisk="true"
+		maxElementsOnDisk="100000" />
+		
+	<cache name="stationCache" eternal="false"
+		timeToLiveSeconds="600" maxElementsInMemory="5000"
+		memoryStoreEvictionPolicy="LRU" statistics="true" overflowToDisk="true"
+		maxElementsOnDisk="100000" />
+	<cache name="otherCache" eternal="false"
+		timeToLiveSeconds="600" maxElementsInMemory="5000"
+		memoryStoreEvictionPolicy="LRU" statistics="true" overflowToDisk="true"
+		maxElementsOnDisk="100000" />
+	<cache name="anotherCache" eternal="false"
+		timeToLiveSeconds="600" maxElementsInMemory="5000"
+		memoryStoreEvictionPolicy="LRU" statistics="true" overflowToDisk="true"
+		maxElementsOnDisk="100000" />				
+</ehcache>
