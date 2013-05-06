@@ -11,7 +11,7 @@ import org.hibernate.validator.constraints.NotBlank;
  * @version 1.0
  * @created 2013年3月25日 19:56:01
  */
-@JsonAutoDetect
+@SuppressWarnings("unchecked")
 public class Ticket implements Serializable {
 
 	/**
