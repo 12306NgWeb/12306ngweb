@@ -13,14 +13,24 @@
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 	<!-- logback -->
-	<context-param>
-		<param-name>logbackConfigLocation</param-name>
-		<param-value>classpath:logback.xml</param-value>
-	</context-param>
-
-	<listener>
-		<listener-class>ch.qos.logback.classic.servlet.LogbackConfigListener</listener-class>
-	</listener>	
+		<context-param>
+				<param-name>webAppRootKey</param-name>
+				<param-value>webName.root</param-value>
+			</context-param>
+			<context-param>
+				<param-name>log4jConfigLocation</param-name>
+				<param-value>classpath*:/log4j.properties</param-value>
+			</context-param>
+			<context-param>
+				<param-name>log4jRefreshInterval</param-name>
+				<param-value>3000</param-value>
+			</context-param>
+			<listener>
+				<listener-class>
+					org.springframework.web.util.Log4jConfigListener
+				</listener-class>
+			</listener>
+	
 	
 <!-- Filters -->
 
@@ -50,9 +60,11 @@
 	  <filter-name>AuthenticationFilter</filter-name>
 	  <url-pattern>/*</url-pattern>
 	</filter-mapping>   
-<!-- Filters -->   
+<!-- Filters -->
 
-		<context-param>
+
+
+<context-param>
 			<param-name>spring.profiles.default</param-name>
 			<param-value>development</param-value>
 		</context-param>
