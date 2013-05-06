@@ -1,5 +1,8 @@
 package org.ng12306.web.ct.entity;
 
+import java.io.Serializable;
+
+import org.codehaus.jackson.annotate.JsonAutoDetect;
 import org.hibernate.validator.constraints.NotBlank;
 
 /**
@@ -9,7 +12,7 @@ import org.hibernate.validator.constraints.NotBlank;
  * @created 2013年3月25日 19:56:01
  */
 @SuppressWarnings("unchecked")
-public class Ticket {
+public class Ticket implements Serializable {
 
 	/**
 	 * 主键
