@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+ 
+<tiles-definitions>        
+       <definition name="login" extends="standardLayout"> 
+	       <put-attribute name="title" value="login in ngweb" />
+	       <put-attribute name="body" value="/WEB-INF/jsp/body/login.jsp"/>
+       </definition>
+       
+       <definition name="home" extends="privateLayout"> 
+	       <put-attribute name="title" value="ngweb index" />
+	       <put-attribute name="body" value="/WEB-INF/jsp/body/index.jsp"/>
+       </definition>    
+       <definition name="searchResult" extends="standardLayout"> 
+	       <put-attribute name="title" value="ngweb index" />
+	       <put-attribute name="body" value="/WEB-INF/jsp/body/search.jsp"/>
+       </definition>  
+       <definition name="bookTicket" extends="standardLayout"> 
+	       <put-attribute name="title" value="ngweb index" />
+	       <put-attribute name="body" value="/WEB-INF/jsp/body/bookticket.jsp"/>
+       </definition>                     
+</tiles-definitions>

@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin: 0; padding: 0;}
+body{font-size:14px; background: #fff; font-family:"Microsoft Yahei", Verdana, Geneva, sans-serif; line-height: 25px; color: #333;}
+table{border-collapse: collapse; border-spacing: 0; font-family:inherit;}
+fieldset,img{border: none; font-family:inherit;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style: normal; font-weight: normal; font-family:inherit;}
+ol,ul{list-style: none;}
+caption,th{text-align: left;}
+h1,h2,h3,h4,h5,h6{font-size: 100%; font-weight: normal; font-family:inherit;}
+q:before,q:after{content: '';}
+abbr,acronym{border: 0; font-variant: normal;}
+sup{vertical-align: text-top;}
+sub{vertical-align: text-bottom;}
+input{ font-family:inherit; font-size: 16px;}
+.ordercons input{ font-size: 14px;}
+input[type=text]{ text-indent: 5px;}
+input[type=submit]{ cursor: pointer;}
+legend{ font-size: 16px;}
+
+input[type=text]:focus { border: 1px solid #38e; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; outline:none; -webkit-box-shadow: #38e 0px 0px 5px;
+-moz-box-shadow: #38e 0px 0px 5px;
+box-shadow: #38e 0px 0px 5px;}
+#startAddress,#endAddress{ border: 1px solid #ddd; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; outline:none; background: #fefefe;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;}
+
+#inputerror{ border: 1px solid #f44; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; outline:none; background: #fee; }
+
+
+.inputerror{ border: 1px solid #f44; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; outline:none; background: #fee; }
+/*font size*/
+.f12{font-size: 12px;}
+.f13{font-size: 13px;}
+.f14{font-size: 14px;}
+.f15{font-size: 15px;}
+.f16{font-size: 16px;}
+.f17{font-size: 17px;}
+.f18{font-size: 18px;}
+.f20{font-size: 20px;}
+.fB{font-weight: bold;}
+.fN{font-weight: normal;}
+
+/*color*/
+.red{color: #f44;}
+.pink{color: #feeeee;}
+.blue{color: #38e;}
+.lightblue{color: #eef5ff;}
+.green{ color: #8b0;}
+.orange{ color: #f60;}
+.black{color: #333;}
+.gray{color: #666;}
+.lightgray{color: #999;}
+.textcolor{color: #ccc;}
+.bordercolor{color: #ddd;}
+.bgcolor{color: #f0f0f0;}
+.lightgray{color: #999;}
+
+
+/*layout*/
+.fleft{float: left;}
+.fright{float: right;}
+.clear{clear: both;}
+
+.tleft{text-align: left;}
+.tright{text-align: right;}
+.tcenter{text-align: center;}
+
+.mt5{margin-top: 5px;}
+.mt10{margin-top: 10px}
+.mt15{margin-top: 15px}
+.mt20{margin-top: 20px}
+.mr5{margin-right: 5px;}
+.mr10{margin-right: 10px}
+.mr15{margin-right: 15px}
+.mr20{margin-right: 20px}
+.mb5{margin-bottom: 5px;}
+.mb10{margin-bottom: 10px}
+.mb15{margin-bottom: 15px}
+.mb20{margin-bottom: 20px}
+.ml5{margin-left: 5px;}
+.ml10{margin-left: 10px}
+.ml15{margin-left: 15px}
+.ml20{margin-left: 20px}
+
+.pt5{padding-top: 5px;}
+.pt10{padding-top: 10px}
+.pt15{padding-top: 15px}
+.pt20{padding-top: 20px}
+.pr5{padding-right: 5px;}
+.pr10{padding-right: 10px}
+.pr15{padding-right: 15px}
+.pr20{padding-right: 20px}
+.pb5{padding-bottom: 5px;}
+.pb10{padding-bottom: 10px}
+.pb15{padding-bottom: 15px}
+.pb20{padding-bottom: 20px}
+.pl5{padding-left: 5px;}
+.pl10{padding-left: 10px}
+.pl15{padding-left: 15px}
+.pl20{padding-left: 20px}

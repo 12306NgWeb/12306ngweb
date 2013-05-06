@@ -11,16 +11,18 @@
     <context:component-scan base-package="org.ng12306.web.ct.controller" use-default-filters="false">
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
-
+    <context:component-scan base-package="org.ng12306.web.ct.service.impl" use-default-filters="false">
+    </context:component-scan>    
     <mvc:annotation-driven/>
 
     <!-- 将无法mapping到Controller的path交给default servlet handler处理 -->
     <mvc:default-servlet-handler/>
 
     <!-- 定义JSP文件的位置 -->
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/views/"/>
+   <!--  <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/jsp/body/"/>
         <property name="suffix" value=".jsp"/>
-    </bean>
-
+    </bean> -->
+	<import resource="classpath*:/tiles-context.xml" />
+	
 </beans>

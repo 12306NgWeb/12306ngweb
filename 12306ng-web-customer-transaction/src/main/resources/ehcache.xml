@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="ehcache.xsd" updateCheck="true"
+	monitoring="autodetect" dynamicConfig="true">
+	<diskStore path="${NGWEB_HOME}/data/cache" />
+	<defaultCache eternal="true" maxElementsInMemory="50"
+		memoryStoreEvictionPolicy="LFU" />
+	<!-- 用户对车站信息查询 -->
+	<cache name="ticketSearchCache" eternal="false"
+		timeToLiveSeconds="600" maxElementsInMemory="5000"
+		memoryStoreEvictionPolicy="LRU" statistics="true" overflowToDisk="true"
+		maxElementsOnDisk="100000" />
+	<!-- 用户信息的查询 例如 联系人 订单信息 等 -->
+	<cache name="userSearchCache" eternal="false"
+		timeToLiveSeconds="600" maxElementsInMemory="5000"
+		memoryStoreEvictionPolicy="LRU" statistics="true" overflowToDisk="true"
+		maxElementsOnDisk="100000" />
+	<!-- 初始化信息 例如票价等信息  -->
+	<cache name="initializationCache" eternal="false"
+		timeToLiveSeconds="600" maxElementsInMemory="5000"
+		memoryStoreEvictionPolicy="LRU" statistics="true" overflowToDisk="true"
+		maxElementsOnDisk="100000" />
+	<!-- 所有车站信息 -->	
+	<cache name="stationCache" eternal="false"
+		timeToLiveSeconds="600" maxElementsInMemory="5000"
+		memoryStoreEvictionPolicy="LRU" statistics="true" overflowToDisk="true"
+		maxElementsOnDisk="100000" />
+	<!-- 预留区一 -->
+	<cache name="otherCache" eternal="false"
+		timeToLiveSeconds="600" maxElementsInMemory="5000"
+		memoryStoreEvictionPolicy="LRU" statistics="true" overflowToDisk="true"
+		maxElementsOnDisk="100000" />
+	<!-- 预留区二 -->
+	<cache name="anotherCache" eternal="false"
+		timeToLiveSeconds="600" maxElementsInMemory="5000"
+		memoryStoreEvictionPolicy="LRU" statistics="true" overflowToDisk="true"
+		maxElementsOnDisk="100000" />				
+</ehcache>

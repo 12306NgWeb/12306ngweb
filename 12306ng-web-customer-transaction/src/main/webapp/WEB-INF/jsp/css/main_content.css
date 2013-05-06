@@ -1,0 +1,309 @@
+/* -------------------------------------------------------
+main_content.css  css for main content support
+------------------------------------------------------- */
+#mainContent {
+	padding:20px;
+	width: 780px;
+	overflow: hidden;
+}
+
+#mainContent input[type=text],select {
+	width:200px;
+	border: 2px solid #CCCCCC;
+	height: 25px;
+	color: #000000;
+}
+
+#mainContent textarea{
+	border: 1px solid #A3A3A3; border-radius: 7px;
+}
+
+#mainContent input[type=text]:HOVER,select:HOVER {
+	border: 2px solid #5A5A5A;	
+}
+
+#mainContent input[type=text]:ACTIVE,select:ACTIVE {
+	border: 2px solid #5A5A5A;		
+}
+
+#mainContent H1 {
+	color: #000000;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: HPRegular, Arial, sans-serif; 
+}
+
+#mainContent H2 {
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    font-family: HPRegular, Arial, sans-serif; 
+}
+
+#mainContent H3 {
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    font-family: HPRegular, Arial, sans-serif; 
+}
+
+label {
+	width:200px;
+	height: 25px;
+	font-weight:bold;
+}
+
+.results {
+	background: #fff;
+	border: 2px solid #CCCCCC;
+	border-radius: 7px;
+	font: normal 12px/150% HPRegular,Arial,sans-serif;
+	moz-border-radius: 7px;
+	overflow: hidden;
+	webkit-border-radius: 7px;
+	width: 100%;
+	margin:auto;
+	margin-top:10px;
+	font-size: 14px;
+	line-height:18px;
+}
+
+.results table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.results table td, .results table th {
+	padding: 7px 7px;
+	text-align: left;
+}
+
+.results table thead th {
+	background-color: #767676;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#504444', EndColorStr='#767676')" no-repeat; /* IE8 */
+	/* background: -webkit-gradient(linear, left top, left bottom, from(#504444), to(#E9E9E9)) no-repeat; */
+	background: -moz-linear-gradient(top, #504444, #767676) no-repeat;
+	background: linear-gradient(#504444, #767676);	
+	border-left: 1px solid #A3A3A3;	
+	font-size: 15px;
+	font-weight: bold;
+	font-family:HPRegular,Arial,sans-serif;
+	color: #FFFFFF;
+}
+
+.results table thead th:first-child {
+	border: none;
+}
+
+.results table tbody td {
+	color: #000000;
+	border: 1px solid #CCCCCC;
+	border-left: 1px solid #DBDBDB;
+}
+
+.results table tbody tr:hover {
+/*	background-color: #FFEBCC;*/
+}
+
+.results table tbody td:first-child {
+	border-left: none;
+}
+
+.results table tbody tr:last-child td {
+	border-bottom: none;
+}
+
+.results table tfoot td div {
+	background: #EBEBEB;
+	border-top: 1px solid #8C8C8C;
+}
+
+.results table tfoot td {
+	font-size: 12px;
+	padding: 0;
+}
+
+.results table tfoot td div {
+	padding: 2px;
+}
+
+.results table tfoot td ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+
+.results table tfoot li {
+	display: inline;
+}
+
+.results table tfoot li a {
+	background: -moz-linear-gradient( center top, #00557F 5%, #v 100% );
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00557F), color-stop(1, #v) );
+	background: linear-gradient(#00557F, #EEEEEE);
+	background-color: #00557F;
+	border: 1px solid #8C8C8C;
+	border-radius: 3px;
+	color: #F5F5F5;
+	display: inline-block;
+	margin: 1px;
+	moz-border-radius: 3px;
+	padding: 2px 8px;
+	text-decoration: none;
+	webkit-border-radius: 3px;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.results table tbody a:link {
+	color:#007DBA; 			/* unvisited link */
+}
+
+.results table tbody a:visited {
+	color:#822980;			 /* visited link */
+}
+
+.results table tbody a:hover {
+	color:#C1401A;			/* mouse over link */
+}
+
+.detailsTable {
+	border: 2px solid #CCCCCC;
+	border-radius: 7px;
+	font: normal 12px/150% HPRegular,Arial,sans-serif;
+	moz-border-radius: 7px;
+	overflow: hidden;
+	webkit-border-radius: 7px;
+	width: 100%;
+	margin:auto;
+	margin-top:10px;
+	font-size: 14px;
+	line-height:18px;
+}
+
+.detailsTable table {
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid #A3A3A3;
+}
+.detailsTable table th {
+    background-color: #767676;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#504444', EndColorStr='#767676')" no-repeat; /* IE8 */
+	/* background: -webkit-gradient(linear, left top, left bottom, from(#504444), to(#E9E9E9)) no-repeat; */
+	background: -moz-linear-gradient(top, #504444, #767676) no-repeat;
+	background: linear-gradient(#504444, #767676);	
+	border-left: 1px solid #A3A3A3;	
+	font-size: 15px;
+	font-weight: bold;
+	font-family:Arial;
+	color: #FFFFFF;
+	text-align: left;
+	padding: 7px 7px;
+	border: 1px solid #A3A3A3;
+	width: 30%;
+}
+
+.detailsTable table td {
+	padding: 7px 7px;
+	text-align: left;
+	border: 1px solid #A3A3A3;
+}
+
+.detailsTable table li {
+	 list-style: none;
+}
+
+.breadcrumb {
+	margin-bottom: 20px;
+}
+
+.breadcrumb .float_right {
+	float: right;
+}
+
+.gloabalError {
+	border: 2px solid #CCC;
+	border-radius: 7px;
+	display: block;
+	webkit-border-radius: 7px;
+	moz-border-radius: 7px;
+	padding: 1em 1.4em;
+	background: none;
+	display: none;
+}
+
+.gloabalError .close {
+	float: right;
+	display: block;
+	margin-top: -10px;
+	margin-right: -14px;
+	background: #007DBA;
+	color: white;
+	height: 15px;
+	padding: 1px 3px;
+	cursor: pointer;
+
+}
+
+.gloabalError ul {
+	padding: 0px 0px;
+}
+
+.gloabalError ul  li {
+	list-style: none;
+}
+
+.gloabalError ul  li span {
+	font-weight: bold;
+	color: red;
+	margin: 0px 5px 0px 0px;
+}
+
+.detailsTable table tbody a:link {
+	color:#007DBA; 			/* unvisited link */
+}
+
+.detailsTable table tbody a:visited {
+	color:#822980;			 /* visited link */
+}
+
+.detailsTable table tbody a:hover {
+	color:#C1401A;			/* mouse over link */
+}
+
+.detailsTab { 
+	width: 100%;
+}
+
+.home-header a {
+	text-decoration:none;
+	color:#000000;
+}
+
+.home-header a:hover {
+	text-decoration:none;
+	color:#007dba;
+}
+
+.word_wrap{
+		table-layout: fixed;	
+		word-wrap: break-word;  
+	}
+.reson_textarea{
+	height: 100px; width: 400px
+}
+
+.eula_panel{
+	height: 400px; width: 770px;
+	border: 2px solid #CCCCCC;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 2px solid #CCCCCC;
+	padding: 8px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+	

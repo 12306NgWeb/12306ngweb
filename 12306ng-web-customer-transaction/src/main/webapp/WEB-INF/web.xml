@@ -12,6 +12,27 @@
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
+	<!-- logback -->
+		<context-param>
+				<param-name>webAppRootKey</param-name>
+				<param-value>webName.root</param-value>
+			</context-param>
+			<context-param>
+				<param-name>log4jConfigLocation</param-name>
+				<param-value>classpath*:/log4j.properties</param-value>
+			</context-param>
+			<context-param>
+				<param-name>log4jRefreshInterval</param-name>
+				<param-value>3000</param-value>
+			</context-param>
+			<listener>
+				<listener-class>
+					org.springframework.web.util.Log4jConfigListener
+				</listener-class>
+			</listener>
+	
+	
+<!-- Filters -->
 
     <filter>
         <filter-name>encodingFilter</filter-name>
@@ -29,7 +50,24 @@
         <filter-name>encodingFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+    
+ 	<filter>
+	  <filter-name>AuthenticationFilter</filter-name>
+	  <filter-class>org.ng12306.web.ct.util.AuthenticationFilter</filter-class>
+	</filter>
 
+	<filter-mapping>
+	  <filter-name>AuthenticationFilter</filter-name>
+	  <url-pattern>/*</url-pattern>
+	</filter-mapping>   
+<!-- Filters -->
+
+
+
+<context-param>
+			<param-name>spring.profiles.default</param-name>
+			<param-value>development</param-value>
+		</context-param>
     <servlet>
         <servlet-name>springServlet</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>

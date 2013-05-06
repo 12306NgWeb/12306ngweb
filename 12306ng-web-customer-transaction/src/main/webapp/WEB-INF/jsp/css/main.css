@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+@import url("user-center.css");
+@import url("ticket-book.css");
+@import url("order.css");
+@import url("login.css");
+
+/*index css*/
+.ng-wrap{ margin: 0 auto; width: 1000px;}
+.ng-logo{ margin: 250px auto 20px auto; width: 320px; height: 75px; background:url(../images/logo.png) no-repeat;}
+
+.ng-menu{ margin: 15px auto; width: 320px; line-height: 35px;}
+.ng-menu span{ margin: 0 5px;}
+.ng-menu .blue a{ color: #38e;}
+.ng-menu .red a{ color: #f44; text-decoration: none;}
+
+.ng-indexSearch{ margin: 0 auto 260px auto; padding: 10px 0; width:760px;}
+.ng-indexSearch input{ vertical-align:middle;}
+.inputtxt , .inputcode, .inputdate ,.goreg{ height:38px; line-height: 38px; border: 1px solid #ddd; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; vertical-align: middle;}
+.inputtxt{ width: 230px;}
+.inputdate{ width: 160px;}
+.inputcode{ width: 150px;}
+.btnsearch{ width: 100px; height: 40px; line-height: 40px; color: #fff; background: #f44; border: none; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px;}
+
+/*header*/
+.header{ clear: both; position: fixed; top: 0; margin: 0 auto; padding: 0; width: 100%; height: 50px; line-height: 50px; background: #fafafa; border-bottom: 1px solid #ddd;}
+.header img{ float: left; padding-left: 10px;}
+.headermenu{ margin-left: 15px;}
+.headermenu a{ display:inline-block; padding: 0 15px; text-decoration: none; color: #333;}
+.headerlogin{ margin:11px 20px;; width: 90px; height: 28px; line-height: 28px; border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; background: #f44; text-align:center;}
+.headerlogin a{ margin: 0 5px; text-align: center; text-decoration: none; color: #fff}
+
+#myshow{ position: absolute; top: 38px; right: 20px; width: 88px; background: #fff; border: 1px solid #f44;}
+#myshow ul{ margin: 0 auto; text-align: center;}
+#myshow ul li{ width:100%; line-height: 25px; }
+#myshow ul li a{ display: inline-block; width:100%; text-decoration: none; color: #666;}
+#myshow ul li a:hover{ background: #fee; color: #f44;}
+
+/*bottom*/
+.bottom{ clear:both; margin: 0 auto; padding: 0; width: 100%; height: 40px; line-height: 40px; background: #eee; border-top: 1px solid #ddd;}
+.bottom img{ float: left;}
+.bottom span{ float: right; padding-right: 5px; line-height: 40px;}
+.bottom span a{ display: inline-block; margin-right: 5px; color: #333; text-decoration: none;}
+.bottom em{ margin: 0 5px;}
+
+/*page*/
+.page{ margin: 0 auto; text-align: center;}
+.page a{ text-decoration: none; color: #38e;}
+.page .pagecurrent{ color: #333;}
+
+/*help*/
+.userhelp{ width: 1000px;}
+.usersearch{ padding-bottom:40px; border-bottom: 1px dashed #ddd;}
+.userhelp a{ margin: 0 5px; text-decoration: none; }
+.userhelp .helplist{ margin: 0; padding: 10px 0;}
+.userhelp .helplist li{ line-height: 30px; margin: 5px 0; padding:0;}
+.userhelp .helplist li a{ color: #333;}
+.helpfaq p{ text-indent:2em;}
+.helpfaq a{ color: #999;}
+
+/*checkbox radio css*/
+.custom-checkbox,.custom-radio { position:relative; }
+.custom-checkbox input {position: absolute;left: 2px;top: 2px;margin: 0;z-index: -1;}
+.custom-checkbox label {display: block;position: relative;z-index: 1; height: 15px; line-height: 1;padding: 1px 0 0 20px;cursor: pointer;}
+.custom-radio input {position: absolute;left: 0px;top: 0px;margin: 0;z-index: -1;vertical-align:middle;}
+.custom-radio label {display: block;position: relative;z-index: 1;line-height: 1;padding: 0 0 0 20px;cursor: pointer;height:15px;vertical-align:middle;}
+.custom-checkbox label, .custom-radio label { background:url(../images/checkbox.png) no-repeat;}
+.custom-checkbox label{background-position: 0 0;}
+.custom-radio label {background-position: 0 -32px;}
+.custom-checkbox label.checked{background-position: 0 -15px;}
+.custom-radio label.checked {background-position: 0 -48px; }
+
+.select_box {width:70px; position:relative; margin:10px 0;padding:0; font-size:12px; z-index: 99;}
+.select_box input {cursor:pointer; display:block; line-height:26px; width:100%; height:26px; overflow:hidden;border:1px solid #ccc; background:url(../images/select.png) no-repeat 50px center; font-size:12px;}
+.select_box ul {width:70px; position:absolute; left:0; top:26px; border:1px solid #ccc; background:#fff; overflow: hidden;display:none; background:#ebebeb; z-index:99999;}
+.select_box ul li {display:block;height:30px;overflow:hidden;line-height:30px;padding-left:5px;width:100%;cursor:pointer;}
+.hover {background:#ccc;}
+
+.icard .select_box input, .icard .select_box ul{ width: 100px;}
+.icard .select_box input{ background:url(../images/select.png) no-repeat 75px center;}
