@@ -70,7 +70,7 @@
 			<scope>runtime</scope>
 		</dependency>
 		<!--logback config  -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-core</artifactId>
 			<version>${logback.version}</version>
@@ -80,6 +80,7 @@
 			<artifactId>logback-classic</artifactId>
 			<version>${logback.version}</version>
 		</dependency>		
+		-->
 		<!-- java.util.logging 实际调用slf4j -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
