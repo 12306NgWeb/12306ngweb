@@ -96,14 +96,14 @@ public class HomeController {
 			model.addAttribute("user", user);
 			return "bookTicket";
 
-		} else if (user.getUserName() == "Michael" && user.getPassword() == "123") {
+		} else if (user.getUserName() == "Michael" && user.getPassword() == "123" && user.getAssociatedTicketId() == null) {
 
 			request.getSession().setAttribute("loginUserProfile", user);
 			model.addAttribute("user", user);
 			return "searchResult";
 
 		} else {
-
+			
 			return "login";
 		}
 

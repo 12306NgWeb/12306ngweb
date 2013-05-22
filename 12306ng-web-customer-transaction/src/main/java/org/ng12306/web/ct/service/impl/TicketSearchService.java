@@ -3,6 +3,7 @@ package org.ng12306.web.ct.service.impl;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.ng12306.web.ct.entity.Passenger;
 import org.ng12306.web.ct.entity.Ticket;
 import org.ng12306.web.ct.service.ITicketSearchService;
 import org.springframework.stereotype.Service;
@@ -34,6 +35,27 @@ public class TicketSearchService implements ITicketSearchService {
 		ticketList.add(tickett);
 
 		return ticketList;
+	}
+	public Ticket getTicketById(String id){
+		Ticket tickett = new Ticket();
+		tickett.setBeginStation("上海(15:29)");
+		tickett.setArriveStation("北京(23:11)");
+		tickett.setCostTime("50");
+		tickett.setTicketInfo("???");
+		tickett.setLineNo("G7429");
+		tickett.setId("2");
+		tickett.setTicketInfo("G7428(上海虹桥→杭州)");
+		
+		return tickett;
+	}
+	@Override
+	public List<Passenger> getPassengerList(String userID) {
+		List <Passenger> list  = new ArrayList<Passenger>();
+		Passenger p = new Passenger();
+		p.setEmail("aaa@126.com");
+		list.add(p);
+		
+		return list;
 	}
 
 }
