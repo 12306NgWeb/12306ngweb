@@ -366,14 +366,14 @@
 				</configuration>
 			</plugin>
 			<!-- war 打包 -->
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
 				<configuration>
 					<warName>ngweb</warName>
 					<outputDirectory>D:\ftp_share\software\apache-tomcat-6.0.32\apache-tomcat-6.0.32\webapps</outputDirectory>
 				</configuration>
-			</plugin>			
+			</plugin>	 -->		
 			<!-- test插件, 仅测试名称为*Test的类,使用支持分组测试的surefire-junit47 driver -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -394,7 +394,7 @@
 				</dependencies>
 			</plugin>
 			<!-- jetty插件, 设定context path与spring profile -->
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.mortbay.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
 				<version>${jetty.version}</version>
@@ -413,7 +413,7 @@
                     <stopKey/>
                     <stopPort/>
                 </configuration>
-			</plugin>
+			</plugin> -->
 		</plugins>
 	</build>
 </project>

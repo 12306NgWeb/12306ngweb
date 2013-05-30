@@ -5,11 +5,11 @@ import java.util.List;
 
 import org.ng12306.web.ct.entity.Passenger;
 import org.ng12306.web.ct.entity.Ticket;
-import org.ng12306.web.ct.service.ITicketSearchService;
+import org.ng12306.web.ct.service.ISearchTicketService;
 import org.springframework.stereotype.Service;
 
 @Service
-public class TicketSearchService implements ITicketSearchService {
+public class SearchTicketService implements ISearchTicketService {
 
 	@Override
 	public List<Ticket> retrieveListOfTicketByStarAddrByEndAddrByStarDate(String BeginStation, String ArriveStation, String StartDate) {
