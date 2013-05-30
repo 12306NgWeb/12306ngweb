@@ -3,7 +3,7 @@ package org.ng12306.web.ct.cache;
 import java.io.Serializable;
 
 import org.aopalliance.intercept.MethodInvocation;
-import org.ng12306.web.ct.service.impl.TicketSearchService;
+import org.ng12306.web.ct.service.impl.SearchTicketService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -14,7 +14,7 @@ import com.googlecode.ehcache.annotations.key.CacheKeyGenerator;
 public class NgwebCacheKeyGenerator implements CacheKeyGenerator<Serializable>{
 	
 	public static final String SPLITER = "@***###***@";
-	private Logger logger = LoggerFactory.getLogger(TicketSearchService.class);
+	private Logger logger = LoggerFactory.getLogger(SearchTicketService.class);
 
 	@Override
 	public Serializable generateKey(MethodInvocation methodInvocation) {

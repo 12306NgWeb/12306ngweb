@@ -11,6 +11,7 @@
     <context:component-scan base-package="org.ng12306.web.ct.controller" use-default-filters="false">
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
+    <!-- 自动扫描且只扫描@Service -->
     <context:component-scan base-package="org.ng12306.web.ct.service.impl" use-default-filters="false">
     </context:component-scan>    
     <mvc:annotation-driven/>

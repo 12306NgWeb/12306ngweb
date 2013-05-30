@@ -46,11 +46,11 @@
 				<span class="gray">类别：</span>
 				<span class="mr5">特快旅客列车</span><em>|</em>
 				<span class="gray">始发：</span>
-				<span class="mr5">北京南</span><em>|</em>
+				<span class="mr5"><c:out value ="${ticket.beginStation}"/></span><em>|</em>
 				<span class="gray">终点：</span>
-				<span class="mr5">上海虹桥</span><em>|</em>
+				<span class="mr5"><c:out value ="${ticket.arriveStation}"/></span><em>|</em>
 				<span class="gray">全程：</span>
-				<span>4小时55分</span>
+				<span><c:out value ="${ticket.costTime}"/></span>
 			</p>
 			<p>
 				<span>硬卧(103.00元)</span>
