@@ -2,7 +2,7 @@ package org.ng12306.web.ct.entity;
 
 import java.util.List;
 
-import org.ng12306.web.ct.service.IUserProcessService;
+import org.ng12306.web.ct.service.IMemberProcessService;
 
 /**
  * 用户抽象类实体--12306ngWeb
@@ -23,14 +23,15 @@ public class User {
 	/**
 	 * 乘客信息接口
 	 */
-	private IUserProcessService userProcessService;
+	private IMemberProcessService memberProcessService;
 
-	public IUserProcessService getUserProcessService() {
-		return userProcessService;
+
+	public IMemberProcessService getMemberProcessService() {
+		return memberProcessService;
 	}
 
-	public void setUserProcessService(IUserProcessService userProcessService) {
-		this.userProcessService = userProcessService;
+	public void setMemberProcessService(IMemberProcessService memberProcessService) {
+		this.memberProcessService = memberProcessService;
 	}
 
 	/**

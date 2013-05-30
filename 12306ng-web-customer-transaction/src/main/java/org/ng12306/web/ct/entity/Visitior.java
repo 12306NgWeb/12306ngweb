@@ -1,6 +1,6 @@
 package org.ng12306.web.ct.entity;
 
-import org.ng12306.web.ct.service.ITicketSearchService;
+import org.ng12306.web.ct.service.ISearchTicketService;
 
 // TODO: Auto-generated Javadoc
 /**
@@ -9,7 +9,7 @@ import org.ng12306.web.ct.service.ITicketSearchService;
 public class Visitior {
 
 	/** 游客类 有浏览票的方法. */
-	ITicketSearchService ticketSearchService;//查询票接口
+	ISearchTicketService searchTicketService;//查询票接口
 
 	/** The ticket. */
 	private Ticket ticket;//查询票
@@ -34,18 +34,6 @@ public class Visitior {
 	 *
 	 * @return the ticket search service
 	 */
-	public ITicketSearchService getTicketSearchService() {
-		return ticketSearchService;
-	}
-
-	/**
-	 * Sets the ticket search service.
-	 *
-	 * @param ticketSearchService the new ticket search service
-	 */
-	public void setTicketSearchService(ITicketSearchService ticketSearchService) {
-		this.ticketSearchService = ticketSearchService;
-	}
 
 	/**
 	 * Gets the ticket.
@@ -54,6 +42,14 @@ public class Visitior {
 	 */
 	public Ticket getTicket() {
 		return ticket;
+	}
+
+	public ISearchTicketService getSearchTicketService() {
+		return searchTicketService;
+	}
+
+	public void setSearchTicketService(ISearchTicketService searchTicketService) {
+		this.searchTicketService = searchTicketService;
 	}
 
 	/**
