@@ -394,7 +394,7 @@
 				</dependencies>
 			</plugin>
 			<!-- jetty插件, 设定context path与spring profile -->
-			<!-- <plugin>
+			<plugin>
 				<groupId>org.mortbay.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
 				<version>${jetty.version}</version>
@@ -404,6 +404,10 @@
 							<name>spring.profiles.active</name>
 							<value>development</value>
 						</systemProperty>
+						<systemProperty>
+							<name>NGWEB_HOME</name>
+							<value>/ngweb/home</value>
+						</systemProperty>						
 					</systemProperties>
 					<useTestClasspath>true</useTestClasspath>
 				
@@ -413,7 +417,7 @@
                     <stopKey/>
                     <stopPort/>
                 </configuration>
-			</plugin> -->
+			</plugin>
 		</plugins>
 	</build>
 </project>

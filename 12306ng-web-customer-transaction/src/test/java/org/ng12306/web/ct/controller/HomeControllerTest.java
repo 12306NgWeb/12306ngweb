@@ -12,14 +12,14 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.ng12306.web.ct.entity.Ticket;
-import org.ng12306.web.ct.service.ITicketSearchService;
+import org.ng12306.web.ct.service.ISearchTicketService;
 import org.springframework.ui.ExtendedModelMap;
 import org.springframework.validation.BindingResult;
 @RunWith(JMock.class)
 public class HomeControllerTest {
 	ExtendedModelMap model = new ExtendedModelMap();;
 
-	private ITicketSearchService mockTicketSearchService;
+	private ISearchTicketService mockTicketSearchService;
 	private HomeController controller;
 	private Mockery context;
 	private BindingResult bindingResult;
@@ -28,7 +28,7 @@ public class HomeControllerTest {
 		context = new Mockery();
 		context.setImposteriser(ClassImposteriser.INSTANCE);
 		bindingResult = context.mock(BindingResult.class);
-		mockTicketSearchService = context.mock(ITicketSearchService.class);
+		mockTicketSearchService = context.mock(ISearchTicketService.class);
 		controller = new HomeController();
 		controller.setTicketSearchService(mockTicketSearchService);
 
