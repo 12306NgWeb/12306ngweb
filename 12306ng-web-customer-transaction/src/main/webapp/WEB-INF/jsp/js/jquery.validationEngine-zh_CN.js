@@ -7,7 +7,7 @@
                 "required": { // Add your regex rules here, you can take telephone as an example
                     "regex": "none",
                     "alertText": "* 此处不可空白",
-                    "alertTextCheckboxMultiple": "* 请选择一个项目",
+                    "alertTextCheckboxMultiple": "* 请选择一个选项",
                     "alertTextCheckboxe": "* 您必须钩选此栏",
                     "alertTextDateRange": "* 日期范围不可空白"
                 },
@@ -117,6 +117,10 @@
                 "onlyLetterNumber": {
                     "regex": /^[0-9a-zA-Z]+$/,
                     "alertText": "* 不接受特殊字符"
+                },
+                "noSpecialChars": {
+                    "regex": /^[0-9a-zA-Z\ \'\-\,]+$/,
+                    "alertText": "* 文本包含无效字符 "
                 },
                 // --- CUSTOM RULES -- Those are specific to the demos, they can be removed or changed to your likings
                 "ajaxUserCall": {

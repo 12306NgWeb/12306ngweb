@@ -48,7 +48,7 @@
         
         <c:choose>
 		   <c:when test="${loginUserProfile.userName == 'Anonymous'}"> 		      		      
-		             <span class="red"><a href="register.html">注册</a></span>
+		             <span class="red"><a href="${url }/member/register.html">注册</a></span>
         			<span class="red"><a href="login.html">登录</a></span>
 		   </c:when>
 		   <c:otherwise> 
