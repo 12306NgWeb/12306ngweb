@@ -9,7 +9,7 @@ import org.ng12306.web.ct.entity.Passenger;
  * <p>
  * The Interface IMemberProcessService.
  * <p>
- * @author huayong
+ * @author XG(wolf)<prairielonewolf@gmail.com>
  * @version 1.0
  */
 public interface IMemberProcessService {

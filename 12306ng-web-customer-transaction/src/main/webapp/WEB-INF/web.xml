@@ -85,4 +85,13 @@
 	<session-config>
 		<session-timeout>30</session-timeout>
 	</session-config>
+	
+	<servlet>
+		<servlet-name>SecurityCodeServlet</servlet-name>
+		<servlet-class>org.ng12306.web.ct.util.SecurityCodeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SecurityCodeServlet</servlet-name>
+		<url-pattern>/servlet/SecurityCodeServlet</url-pattern>
+	  </servlet-mapping>
 </web-app>
