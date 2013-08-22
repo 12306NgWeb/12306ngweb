@@ -1,4 +1,7 @@
-<!doctype html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"   pageEncoding="UTF-8"%>
+<%@ include file="/WEB-INF/layout/include.jsp"%>
+<c:set var="url" value="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}/ngweb" scope="page" />
+<!-- <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -9,9 +12,9 @@
 </head>
 
 <body>
-<div class="wrap">
+<div class="wrap"> -->
     <!--header start-->
-    <div class="header">
+<!--     <div class="header">
         <img src="../images/headlogo.png" alt="header-logo" width="140" height="50" />
         <span class="headermenu fleft">
             <a href="index.html">首页</a>
@@ -22,7 +25,7 @@
             <a href="feedback.html">反馈</a>
         </span>
         <span class="headerlogin fright"><a href="register.html">注册</a><a href="login.html">登录</a></span>
-    </div>
+    </div> -->
     <!--header end-->
     
     <!--the terms of service for register start-->
@@ -69,11 +72,11 @@
         <p>本服务条款之效力、解释、变更、执行与争议解决均适用中华人民共和国法律。因您使用本网站而导致的争议，您同意接受本网站注册地人民法院的管辖。本网站享有对服务
 条款的最终解释与修改权 。</p>	 	
     </div>
-    <p class="tcenter"><a href="register1.html"><input type="submit" name="goregister" class="goreg" value="同意并继续注册" /></a></p>
+    <p class="tcenter"><a href="${url }/member/register1.html"><input type="submit" name="goregister" class="goreg" value="同意并继续注册" /></a></p>
     <!--the terms of service for register end-->
     
     <!--bottom start-->
-    <div class="bottom">
+<!--     <div class="bottom">
         <img src="../images/bottomlogo.png" alt="12306ng-Logo" width="110" height="40" />
         <span>
             <a href="">新手上路</a><em>|</em>
@@ -83,8 +86,8 @@
             <a href="">团队成员</a><em>|</em>
             <a href="">联系我们</a>
         </span>
-    </div>
+    </div> -->
     <!--bottom end-->
-</div>
+<!-- </div>
 </body>
-</html>
+</html> -->
