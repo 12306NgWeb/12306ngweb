@@ -16,7 +16,7 @@
 		
      <c:choose>
 		   <c:when test="${loginUserProfile.userName == 'Anonymous'}"> 		      		      
-		           <span class="headerlogin fright"><a href="register.html">注册</a><a href="login.html">登录</a></span>
+		           <span class="headerlogin fright"><a href="${url }/member/register.html">注册</a><a href="login.html">登录</a></span>
 		   </c:when>
 		   <c:otherwise> 
 		 		<span class="headerlogin fright"><a href="">我的12306</a></span>

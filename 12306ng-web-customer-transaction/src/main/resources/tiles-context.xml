@@ -19,6 +19,7 @@
 				<value>/WEB-INF/layout/standard-tiles.xml</value>
 				<!--  <value>/WEB-INF/exceptions/error-tiles.xml</value>-->
 				<value>/WEB-INF/tiles/login-tiles.xml</value>
+				<value>/WEB-INF/tiles/member-tiles.xml</value>
 			</list>
 		</property>
 	</bean>
